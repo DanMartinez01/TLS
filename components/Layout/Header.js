@@ -38,11 +38,11 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "about"
-                  ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 a")
+                  ? " text-green animation-active "
+                  : " text-black-500 hover:text-green a")
               }
             >
-              About
+              Home
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -57,10 +57,10 @@ const Header = () => {
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "feature"
                   ? " text-orange-500 animation-active "
-                  : " text-black-500 hover:text-orange-500 ")
+                  : " text-black-500 hover:text-green ")
               }
             >
-              Feature
+              Como funciona
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -78,7 +78,7 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Pricing
+              Servicios
             </LinkScroll>
             <LinkScroll
               activeClass="active"
@@ -96,16 +96,24 @@ const Header = () => {
                   : " text-black-500 hover:text-orange-500 ")
               }
             >
-              Testimonial
+              Testimonios
             </LinkScroll>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-orange-500 transition-all">
-                  Sign In
+            {/* <Link href="/">
+              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-green transition-all">
+                Solicitar Traduccion
               </a>
+            </Link> */}
+            {/* <ButtonOutline>
+              <a to="Form"> Solicitar Traducción</a>
+            </ButtonOutline> */}
+            <Link
+              href={"/email-template"}
+              className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-green text-green bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-green hover:text-white-500 transition-all hover:shadow-greeb"
+            >
+              Solicitar Traducción
             </Link>
-            <ButtonOutline>Sign Up</ButtonOutline>
           </div>
         </nav>
       </header>
@@ -126,7 +134,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "about"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "  border-green text-orange-500"
                   : " border-transparent")
               }
             >
@@ -158,7 +166,7 @@ const Header = () => {
               className={
                 "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
                 (activeLink === "feature"
-                  ? "  border-orange-500 text-orange-500"
+                  ? "border-green text-green"
                   : " border-transparent ")
               }
             >
