@@ -1,9 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Logo from "../../public/assets/logo-2.png";
-import Facebook from "../../public/assets/Icon/facebook.svg";
-import Twitter from "../../public/assets/Icon/twitter.svg";
-import Instagram from "../../public/assets/Icon/instagram.svg";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 const Footer = () => {
