@@ -2,7 +2,7 @@ import React, { useMemo } from "react";
 import Image from "next/image";
 import Testimoni from "./Testimoni";
 import ButtonPrimary from "./misc/ButtonPrimary";
-import ButtonOutline from "./misc/ButtonOutline.";
+import ButtonOutline from "./misc/ButtonOutline";
 import Maps from "../public/assets/HugeGlobal.svg";
 import { RiUploadCloud2Fill } from "react-icons/ri";
 import { MdOutlinePriceChange } from "react-icons/md";
@@ -49,7 +49,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <RiUploadCloud2Fill color="green" size={48} />
+                  <RiUploadCloud2Fill color="#486f60" size={48} />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Subi tus archivos
@@ -82,7 +82,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <MdOutlinePriceChange color="green" size={48} />
+                  <MdOutlinePriceChange color="#486f60" size={48} />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Pedi cotizacion
@@ -118,7 +118,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <MdPayments color="green" size={48} />
+                  <MdPayments color="#486f60" size={48} />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Realiza tu pago
@@ -157,7 +157,7 @@ const Pricing = () => {
                 }}
               >
                 <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                  <MdPayments color="green" size={48} />
+                  <MdPayments color="#486f60" size={48} />
                 </div>
                 <p className="text-lg text-black-600 font-medium capitalize my-2 sm:my-7">
                   Recibi
