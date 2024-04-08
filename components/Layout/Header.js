@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
+import Link from "next/link";
 import Image from "next/image";
-// Import react scroll
 import { Link as LinkScroll } from "react-scroll";
 import useCustomTranslation from "../../utils/useCustomTranslation";
 import LanguageSelector from "../LanguageSelector";
-
+import ButtonPrimary from "../misc/ButtonPrimary";
 const Header = () => {
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
@@ -25,14 +25,14 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
-          <div className="col-start-1 col-end-2 flex items-center">
-            {/* <Image src="/assets/logo.png" width={180} height={100} /> */}
-            <h1 className="text-green font-bold text-xl">
-              TransLingual Solutions
-            </h1>
+          <div className="flex flex-row items-center">
+            {/* <Image src="/assets/logo.png" width={100} height={60} /> */}
+            <a href="/" className="text-green text-bold text-2xl">
+              Translingual solutions
+            </a>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-            <LinkScroll
+            {/* <LinkScroll
               activeClass="active"
               to="/"
               spy={true}
@@ -49,8 +49,7 @@ const Header = () => {
               }
             >
               Home
-            </LinkScroll>
-            {/* <h1>{t("welcome")}</h1> */}
+            </LinkScroll> */}
 
             <LinkScroll
               activeClass="active"
@@ -72,7 +71,7 @@ const Header = () => {
             </LinkScroll>
             <LinkScroll
               activeClass="active"
-              to=""
+              to="/pricing"
               spy={true}
               smooth={true}
               duration={1000}
@@ -82,7 +81,7 @@ const Header = () => {
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
                 (activeLink === "pricing"
-                  ? " text-orange-500 animation-active "
+                  ? " text-green animation-active "
                   : " text-black-500 hover:text-green ")
               }
             >
@@ -106,25 +105,20 @@ const Header = () => {
             >
               {t("testimonies")}
             </LinkScroll>
-            <LanguageSelector />
+            <a
+              className="bg-green px-4 py-2 text-white-500 rounded-lg"
+              href="/uploadFile"
+            >
+              Solicitar traduccion
+            </a>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
-            {/* <Link href="/">
-              <a className="text-black-600 mx-2 sm:mx-4 capitalize tracking-wide hover:text-green transition-all">
-                Solicitar Traduccion
-              </a>
-            </Link> */}
-            {/* <ButtonOutline>
-              <a to="Form"> Solicitar Traducción</a>
-            </ButtonOutline> */}
-            {/* <Link className="font-medium tracking-wide py-2 px-5 sm:px-8 border border-green text-green bg-white-500 outline-none rounded-l-full rounded-r-full capitalize hover:bg-green hover:text-white-500 transition-all hover:shadow-greeb">
-              Solicitar Traducción
-            </Link> */}
+            <LanguageSelector />
           </div>
         </nav>
       </header>
-      {/* Mobile Navigation */}
 
+      {/* Mobile Navigation */}
       <nav className="w-full fixed lg:hidden bottom-0 left-0 right-0 z-20  shadow-t ">
         <div className="bg-white-500 px-4 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
@@ -147,7 +141,7 @@ const Header = () => {
               <svg
                 className="w-6 h-6"
                 fill="none"
-                stroke="green"
+                stroke="#486f60"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -211,7 +205,7 @@ const Header = () => {
               <svg
                 className="w-6 h-6"
                 fill="none"
-                stroke="green"
+                stroke="#486f60"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -243,7 +237,7 @@ const Header = () => {
               <svg
                 className="w-6 h-6"
                 fill="none"
-                stroke="green"
+                stroke="#486f60"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
               >
