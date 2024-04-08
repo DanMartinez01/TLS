@@ -14,53 +14,6 @@ const Upload = () => {
 
     reader.readAsDataURL(changeEvent.target.files[0]);
   }
-
-  // async function handleOnSubmit(event) {
-  //   event.preventDefault();
-
-  //   const form = event.currentTarget;
-  //   const fileInput = Array.from(form.elements).find(
-  //     ({ name }) => name === "file"
-  //   );
-
-  //   const formData = new FormData();
-
-  //   for (const file of fileInput.files) {
-  //     formData.append("file", file);
-  //   }
-
-  //   formData.append("upload_preset", "my-uploads");
-
-  //   const data = await fetch(
-  //     "https://api.cloudinary.com/v1_1/dov1ivlbc/image/upload",
-  //     {
-  //       method: "POST",
-  //       body: formData,
-  //     }
-  //   ).then((r) => r.json());
-
-  //   setPdfSrc(data.secure_url);
-  //   setUploadData(data);
-  //   console.log(formData, data);
-
-  //   await sendEmail(data.secure_url);
-  // }
-  // async function sendEmail(pdfUrl) {
-  //   try {
-  //     await fetch("/api/send-email", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //       },
-  //       body: JSON.stringify({
-  //         pdfUrl,
-  //       }),
-  //     });
-  //     console.log("Email sent successfully!");
-  //   } catch (error) {
-  //     console.error("Error sending email:", error);
-  //   }
-  // }
   async function handleOnSubmit(event) {
     event.preventDefault();
 
