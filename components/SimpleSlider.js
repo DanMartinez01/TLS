@@ -43,8 +43,7 @@ import "slick-carousel/slick/slick-theme.css";
 const SimpleSlider = () => {
   const settings = {
     dots: false,
-    prevArrow: false,
-    nextArrow: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
