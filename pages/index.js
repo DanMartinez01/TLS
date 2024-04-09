@@ -11,9 +11,9 @@ export default function Home() {
       <SeoHead title="Trans Lingual Solutions" />
       <Layout>
         <SimpleSlider />
+        <Pricing />
         {/* <Hero /> */}
         <Feature />
-        <Pricing />
       </Layout>
     </>
   );
