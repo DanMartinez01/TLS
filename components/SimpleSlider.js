@@ -32,6 +32,7 @@
 // export default SimpleSlider;
 
 import React from "react";
+import { useRouter } from "next/router";
 import Slider from "react-slick";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -50,12 +51,14 @@ const SimpleSlider = () => {
     autoplaySpeed: 2500, // Set autoplay speed (in milliseconds)
   };
 
+  const router = useRouter();
+
   const handleButtonClick = () => {
-    // Handle button click event
+    router.push("/uploadFile");
   };
 
   return (
-    <div className="w-full overflow-hidden mt-36 md:mt-10 relative">
+    <div className="w-full overflow-hidden mt-20 bg-green  md:mt-10 relative">
       <Slider {...settings}>
         <div className="w-full">
           <Image src={"/assets/carousel1.png"} width={2000} height={800} />
@@ -66,13 +69,13 @@ const SimpleSlider = () => {
       </Slider>
       {/* Button positioned absolutely within the carousel container */}
       <motion.button
-        className="hidden sm:block md:block absolute top-2/3 left-1/2 w-72 p-3 bg-green text-white-500 text-2xl rounded-3xl"
-        initial={{ x: -900 }}
-        animate={{ x: -150 }}
+        className="absolute top-3/4 left-1/2 w-2/4 md:w-72 h-12 md:h-16 max-w-3/4 mx-auto p-3 bg-green text-white-500 text-lg md:text-2xl rounded-3xl hover:bg-white hover:text-green"
+        initial={{ x: "-100%", y: "-50%" }}
+        animate={{ x: "-50%", y: "-50%" }}
         transition={{ duration: 0.2 }}
         onClick={handleButtonClick}
       >
-        Request your free quote
+        Contact us
       </motion.button>
     </div>
   );
