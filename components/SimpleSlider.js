@@ -58,13 +58,13 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden mt-20 bg-green  md:mt-10 relative">
+    <div className="w-full overflow-hidden mt-20  md:mt-10 relative">
       <Slider {...settings}>
         <div className="w-full">
-          <Image src={"/assets/carousel1.png"} width={2000} height={800} />
+          <Image src={"/assets/carousel1.png"} width={2000} height={990} />
         </div>
         <div className="w-full">
-          <Image src={"/assets/carousel2.png"} width={2000} height={800} />
+          <Image src={"/assets/carousel2.png"} width={2000} height={990} />
         </div>
       </Slider>
       {/* Button positioned absolutely within the carousel container */}
