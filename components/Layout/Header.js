@@ -32,6 +32,24 @@ const Header = () => {
             </a>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
+            <LinkScroll
+              activeClass="active"
+              to="pricing"
+              spy={true}
+              smooth={true}
+              duration={1000}
+              onSetActive={() => {
+                setActiveLink("feature");
+              }}
+              className={
+                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
+                (activeLink === "pricing"
+                  ? " text-green animation-active "
+                  : " text-black-500 hover:text-green ")
+              }
+            >
+              Como funciona
+            </LinkScroll>
             {/* <LinkScroll
               activeClass="active"
               to="/"
@@ -50,37 +68,18 @@ const Header = () => {
             >
               Home
             </LinkScroll> */}
-
             <LinkScroll
               activeClass="active"
-              to="feature"
+              to="services"
               spy={true}
               smooth={true}
               duration={1000}
               onSetActive={() => {
-                setActiveLink("feature");
+                setActiveLink("services");
               }}
               className={
                 "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "feature"
-                  ? " text-green animation-active "
-                  : " text-black-500 hover:text-green ")
-              }
-            >
-              Como funciona
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="/pricing"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("pricing");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "pricing"
+                (activeLink === "services"
                   ? " text-green animation-active "
                   : " text-black-500 hover:text-green ")
               }
@@ -250,7 +249,7 @@ const Header = () => {
               </svg>
               {t("testimonies")}
             </LinkScroll>
-            <LanguageSelector />
+            {/* <LanguageSelector /> */}
           </ul>
         </div>
       </nav>
