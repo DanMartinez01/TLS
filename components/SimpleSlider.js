@@ -70,7 +70,7 @@ const SimpleSlider = () => {
       </Slider>
       {/* Button positioned absolutely within the carousel container */}
       <motion.button
-        className="absolute top-3/4 left-1/2 w-2/4 md:w-72 h-12 md:h-16 max-w-3/4 mx-auto p-3 bg-green text-white-500 text-lg md:text-2xl rounded-3xl hover:bg-white hover:text-green"
+        className="absolute top-3/4 left-1/2 w-2/5  sm:w-40 sm:h-12  md:w-72 h-12 md:h-16 max-w-3/4 mx-auto p-3 bg-green text-white-500 text-lg md:text-2xl rounded-3xl hover:bg-white hover:text-green "
         initial={{ x: "-100%", y: "-50%" }}
         animate={{ x: "-50%", y: "-50%" }}
         transition={{ duration: 0.3 }}
