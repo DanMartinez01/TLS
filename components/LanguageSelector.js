@@ -18,7 +18,7 @@ function LanguageSelector() {
   return (
     <div className="relative inline-block text-left">
       {/* Desktop version with dropdown */}
-      <div className="hidden lg:block">
+      <div className="">
         <div>
           <button
             type="button"
@@ -75,22 +75,22 @@ function LanguageSelector() {
       </div>
 
       {/* Mobile version with flag buttons */}
-      <div className="block lg:hidden">
+      {/* <div className="block lg:hidden">
         <button onClick={() => handleChangeLanguage("en")} className="mr-2">
           <img
-            src="/assets/uk-flag.png" // Replace with your actual USA flag image path
+            src="/assets/uk-flag.png" 
             alt="UK Flag"
-            className="w-8 h-8"
+            className="w-8 h-8 rounded-full"
           />
         </button>
         <button onClick={() => handleChangeLanguage("es")}>
           <img
-            src="/assets/spain-flag.png" // Replace with your actual Spain flag image path
+            src="/assets/spain-flag.png" 
             alt="Spain Flag"
             className="w-8 h-8"
           />
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }
