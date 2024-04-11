@@ -24,7 +24,7 @@ const Services = () => {
           {/* <div className="flex flex-col w-2/5 items-center"> */}
           <motion.div
             variants={scrollAnimation}
-            className="flex flex-col w-3/4 items-center  mx-auto"
+            className="flex flex-col w-3/4 items-center  mx-auto mt-4 "
             whileHover={{
               scale: 1.1,
               transition: {
@@ -33,10 +33,10 @@ const Services = () => {
             }}
           >
             <div>
-              <h2 className="text-1xl flex  text-start sm:text-3xl mb-8">
+              <h2 className="text-2xl  text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-8">
                 Services:
               </h2>
-              <div className="mt-4 space-y-12 border rounded-lg  border-gray-500  py-4 ">
+              <div className="my-4 space-y-12 border rounded-lg  border-gray-500 border-2  py-6">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md">
@@ -106,7 +106,7 @@ const Services = () => {
         <ScrollAnimationWrapper>
           <motion.div
             variants={scrollAnimation}
-            className="flex flex-col w-3/4 items-center mx-auto"
+            className="flex flex-col w-3/4 items-center mx-auto mt-4"
             whileHover={{
               scale: 1.1,
               transition: {
@@ -116,8 +116,10 @@ const Services = () => {
           >
             {/* <div className="flex flex-col  w-2/5 items-center"> */}
             <div>
-              <h2 className="text-1xl mb-6  sm:text-3xl">Industries:</h2>
-              <div className="mt-4 space-y-12 border border-gray-100 rounded-lg py-4 ">
+              <h2 className="text-2xl  text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-8">
+                Industries:
+              </h2>
+              <div className="my-4 space-y-12 border border-2 border-gray-500 rounded-lg py-6 ">
                 <div className="flex items-center">
                   <div className="flex-shrink-0">
                     <div className="flex items-center justify-center w-12 h-12 rounded-md">
@@ -184,7 +186,7 @@ const Services = () => {
           </motion.div>
         </ScrollAnimationWrapper>
       </div>
-      <p>
+      <p className="text-center">
         * The signature of our Sworn Translators is duly registered at Sworn
         Translators’ Association of the City of Buenos Aires, which offers our
         clients the ability to request a digitally certified project from
