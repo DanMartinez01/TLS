@@ -69,7 +69,7 @@ const Feature = () => {
       y: 0, // Move back to original position
       transition: {
         delay: 0.1, // Start animation after 0.2 seconds
-        duration: 0.5, // Animation duration is 0.8 seconds
+        duration: 0.1, // Animation duration is 0.8 seconds
       },
     },
   };
