@@ -1,8 +1,110 @@
 
 {
+  "header": [
+   
+    {
+      "label": "Quienes Somos",
+      "link": "feature"
+    },
+    {
+      "label": "Servicios e Industrias",
+      "link": "services"
+    },
+    {
+      "label": "Reseñas",
+      "link": "testimoni"
+    },
+    {
+      "label": "Solicitar una Traducción",
+      "link": "pricing"
+    }
+  ],
+  "contact":"Contacto",
     "welcome": "¡Bienvenido a mi aplicación de Next.js!",
     "services": "Servicios",
     "testimonies":"Testimonios",
-    "aboutUsText":"Somos Translingual Solutions, una empresa joven y dinámica nacida de la necesidad de transitar nuevos desafíos en el mundo de la traducción.Con más de 20 años de experiencia en la industria, nuestra Directora, Estefanía Carbone, ha construido una carrera destacada como líder de equipos regionales y globales en empresas multinacionales de alto nivel. Su experiencia y la expansión de sus relaciones multiculturales garantizan la correcta ejecución e integración de programas y procesos de traducción, asegurando que los resultados superen las expectativas de los clientes en términos de calidad y eficiencia.Hoy, todo ese conocimiento se transforma en una ventaja para nuestros clientes a través de Translingual Solutions. Contamos con un equipo de expertos en traducción especializado en proporcionar soluciones lingüísticas de alta calidad para empresas de todo el mundo. Nuestra experiencia y dedicación nos permiten garantizar que nuestras soluciones se adaptan perfectamente a las necesidades únicas de cada cliente, superando siempre sus expectativas.Con sede en Estados Unidos y en Argentina, ¡estamos listos para asumir el desafío de ayudar a tu empresa a crecer y prosperar a través de la excelencia en la traducción!"
+    "aboutUsText":"Somos Translingual Solutions, una empresa joven y dinámica nacida de la necesidad de transitar nuevos desafíos en el mundo de la traducción.Con más de 20 años de experiencia en la industria, nuestra Directora, Estefanía Carbone, ha construido una carrera destacada como líder de equipos regionales y globales en empresas multinacionales de alto nivel. Su experiencia y la expansión de sus relaciones multiculturales garantizan la correcta ejecución e integración de programas y procesos de traducción, asegurando que los resultados superen las expectativas de los clientes en términos de calidad y eficiencia.Hoy, todo ese conocimiento se transforma en una ventaja para nuestros clientes a través de Translingual Solutions. Contamos con un equipo de expertos en traducción especializado en proporcionar soluciones lingüísticas de alta calidad para empresas de todo el mundo. Nuestra experiencia y dedicación nos permiten garantizar que nuestras soluciones se adaptan perfectamente a las necesidades únicas de cada cliente, superando siempre sus expectativas.Con sede en Estados Unidos y en Argentina, ¡estamos listos para asumir el desafío de ayudar a tu empresa a crecer y prosperar a través de la excelencia en la traducción!",
+    "servtitle":"Servicios & Industrias",
+    "servsubtitle":"Servicios",
+    "indsubtitle":"Industrias",
+    "servicesList": [
+      "Traducciones Certificadas y Públicas, legalizadas ante el Colegio de Traductores Públicos de la Ciudad de Buenos Aires*",
+      "Traducciones Científico-Técnicas",
+      "Localización",
+      "Transcreación",
+      "Revisión, corrección y edición de textos"
+    ],
+    "industriesList": [
+      "Legales",
+      "RR.HH. y Comunicaciones Corporativas",
+      "Marketing",
+      "Tecnología",
+      "Turismo y Hotelería",
+      "Medicina y Biociencias",
+      "Publicidad"
+    ],
+    "disclaimer":"La firma de nuestros Traductores Públicos se encuentran debidamente registradas ante el Colegio de Traductores Públicos de la Ciudad de Buenos Aires para certificar los documentos de manera digital. Esto les brinda a nuestros clientes la posibilidad de trabajar con nosotros desde la comodidad de su hogar u oficina sin necesidad de trasladarse o de hacer trámites personalmente.",
+    "howToTitle":"¿Cómo solicitar una traducción?",
+    "howTo":"¡Solicitar nuestros servicios es fácil! Todas las traducciones son enviadas en formato electrónico a nuestros clientes.",
+    "stepByStep": [
+      {
+        "icon": "RiUploadCloud2Fill",
+        "text": "Enviá tus archivos a traducir mediante el Formulario de Contacto."
+      },
+      {
+        "icon": "MdOutlinePriceChange",
+        "text": "TLS cotizará tu solicitud y la misma será enviada al correo que nos proporcionaste dentro de las 24hs."
+      },
+      {
+        "icon": "MdPayments",
+        "text": "Aceptá la propuesta y realizá tu pago mediante transferencia bancaria o Mercado Pago."
+      },
+      {
+        "icon": "RiFolderReceivedFill",
+        "text": "Recibí por correo electrónico el archivo digital con tu traducción lista."
+      }
+    ],
+    "reviewsTitle":"Reseñas",
+      "reviews": [
+        {
+          "text": "Estefania es un placer trabajar con ella; conocedora e intuitiva con un toque creativo que es refrescante. Tiene la habilidad de pensar fuera de la caja y organizar equipos globales para coordinar y completar múltiples proyectos. Abarca una pasión por la comunicación, las traducciones y el branding con su personalidad extrovertida.",
+          "name": "Donna Moll",
+          "jobPosition": "Directora de Comunicaciones Internas, Diversidad, Equidad e Inclusión",
+          "location": "City of Hope, EE. UU."
+        },
+        {
+          "text": "Estefi es muy centrada en el cliente y encuentra el equilibrio adecuado para deleitar a sus clientes, mientras considera las necesidades de su organización y el equipo. Tiene una verdadera pasión por todo lo que hace.",
+          "name": "Kate Manton",
+          "jobPosition": "Líder de Personas, Operaciones, Gestión de Proyectos",
+          "location": "Ipsos, Inglaterra."
+        },
+        {
+          "text": "Impecable profesional y excelente persona. Un buen mix de talento, compromiso y calidad humana.",
+          "name": "Gustavo Mallo",
+          "jobPosition": "Country Manager",
+          "location": "Nielsen Argentina."
+        },
+        {
+          "text": "Estefania siempre fue proactiva, curiosa e increíblemente pertinente cuando nos ayudaba a prepararnos para grandes eventos o pequeños proyectos que requerían trabajo de traducción. Es clara y directa, pero también amable y adaptable a los cambios. Sus habilidades lingüísticas no solo son de primera calidad desde un punto de vista técnico, sino también muy humanas, lo que ayuda mucho cuando se trata de unir equipos en un viaje hacia un objetivo común. ¡Sería mi primera opción para trabajos de traducción!",
+          "name": "Rute Marques",
+          "jobPosition": "Líder Internacional de Asuntos Corporativos, BMS Worldwide Markets"
+        }
+      ],
+      "footer":[
+        {"title":"Nuestras Oficinas"},
+        {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
+        {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
+        {"email":"Info@translingualsolutions.com"},
+        {"privacy":"Política de Privacidad"}
+      ],
+      "privacy":[
+        {"title":"Política de Privacidad"},
+        {"subtitle":"Secreto profesional y confidencialidad"},
+        {"one":"El Art. 8 del Código de Ética del Colegio de Traductores Públicos de la Ciudad de Buenos Aires establece que:"},
+        {"two":" “El traductor debe respetar rigurosamente el secreto profesional y negarse rotundamente a infringir su deber de confidencialidad. Solo quedará exceptuado de tal deber: a) cuando el cliente o destinatario de su traducción lo autorice expresamente; b) si se tratare de su propia defensa ante el Tribunal de Conducta o ante un tribunal de justicia; c) cuando la ley se lo exija”."},
+        {"three":"En el caso de que el cliente lo considere necesario, se podrá suscribir un Acuerdo de Confidencialidad a los fines de garantizar mayor seguridad en el manejo de los documentos involucrados, sellando de esta manera nuestro secreto profesional."}
+      ]
+  
+
   }
   

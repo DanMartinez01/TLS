@@ -1,9 +1,118 @@
 
 {
+  "header": [
+   
+    {
+      "label": "About us",
+      "link": "feature",
+      "icon": "FaInfoCircle"
+    },
+    {
+      "label": "Services & Industries",
+      "link": "services",
+      "icon": "MdMiscellaneousServices"
+    },
+    {
+      "label": "Reviews",
+      "link": "testimoni",
+      "icon": "MdReviews"
+    },
+    {
+      "label": "Request a Translation",
+      "link": "pricing",
+      "icon": "MdOutlineRequestPage"
+    }
+  ],
+  "contact":"Contact Us",
   "welcome": "Welcome to my Next.js app!",
   "services": "Services",
   "testimonies":"Testimonies",
-  "aboutUsText":"In a world where effective communication knows no borders, Translingual Solutions stands as a beacon of expertise and innovation.With over 20 years of experience in the translation industry, our founder, Estefanía Carbone, has honed her skills as a leader of multinational teams, ensuring flawless execution and integration of language programs that consistently exceed client expectations in both quality and timeliness.Now, we channel that wealth of knowledge into Translingual Solutions, a company dedicated to providing the premier language services you need to thrive in a global marketplace.  Our team of seasoned professionals offers the ideal blend of linguistic prowess and industry insight to deliver solutions that empower your business to break down language barriers and foster international success. Whether you need translation, localization, editing, or proofreading services, trust Translingual Solutions to guide you. Our unwavering commitment to quality, customer satisfaction, and cultural nuance sets us apart. Experience the Translingual Solutions difference and unlock your organization's full potential in a multilingual world. With a presence in the USA and Argentina, we are ready to empower your business with the best language services. Contact us today to learn more about how we can customize a solution to meet your unique needs."
+  "aboutUsText":"In a world where effective communication knows no borders, Translingual Solutions stands as a beacon of expertise and innovation.With over 20 years of experience in the translation industry, our founder, Estefanía Carbone, has honed her skills as a leader of multinational teams, ensuring flawless execution and integration of language programs that consistently exceed client expectations in both quality and timeliness.Now, we channel that wealth of knowledge into Translingual Solutions, a company dedicated to providing the premier language services you need to thrive in a global marketplace.  Our team of seasoned professionals offers the ideal blend of linguistic prowess and industry insight to deliver solutions that empower your business to break down language barriers and foster international success. Whether you need translation, localization, editing, or proofreading services, trust Translingual Solutions to guide you. Our unwavering commitment to quality, customer satisfaction, and cultural nuance sets us apart. Experience the Translingual Solutions difference and unlock your organization's full potential in a multilingual world. With a presence in the USA and Argentina, we are ready to empower your business with the best language services. Contact us today to learn more about how we can customize a solution to meet your unique needs.",
+  
+  "servtitle":"Services & Industries",
+  "servsubtitle":"Services",
+  "indsubtitle":"Industries",
+ 
+  "servicesList": [
+    "Certified and Sworn Translations, legally validated at Sworn Translators’ Association of the City of Buenos Aires*",
+    "Scientific and Technical Translations",
+    "Localization",
+    "Transcreation",
+    "Editing and Proofreading"
+  ],
+  "industriesList": [
+    "Legal",
+    "HR and Corporate Communications",
+    "Marketing",
+    "Technology",
+    "Travel and Hospitality",
+    "Medicine and Life Sciences",
+    "Advertising"
+  ],
+  "disclaimer":"* The signature of our Sworn Translators is duly registered at Sworn Translators’ Association of the City of Buenos Aires, which offers our clients the ability to request a digitally certified project from Translingual Solutions from the comfort of their home or office, with no need to commute or handle procedures in person.",
+  "howToTitle":"My Translation Request",
+  "howTo":"Working with us is easy! All translations are sent by e-mail to our clients.",
+  "stepByStep": [
+    {
+      "icon": "RiUploadCloud2Fill",
+      "text": "Upload your file or document using our Contact Form."
+    },
+    {
+      "icon": "MdOutlinePriceChange",
+      "text": "TLS will quote your request and send it back to you via email within 24 hs."
+    },
+    {
+      "icon": "MdPayments",
+      "text": "Accept the request and start the project by paying via wire transfer or Zelle."
+    },
+    {
+      "icon": "RiFolderReceivedFill",
+      "text": "Receive the project translated and digitally signed in your inbox!"
+    }
+  ],
+ "reviewsTitle":"Reviews",
+    "reviews":
+  [
+    {
+      "text": "Estefania is a pleasure to work with; knowledgeable and intuitive with a creative flair that is refreshing. She has the ability to think out of the box and organize global teams to get multiple projects coordinated and completed. She embraces a passion for communication, translations and branding with her outgoing personality.",
+      "name": "Donna Moll",
+      "jobPosition": "Director of Internal Communications, Diversity, Equity and Inclusion",
+      "location": "City of Hope, USA."
+    },
+    {
+      "text": "Estefi is very client centric, and finds the right balance of delighting her clients, whilst considering the needs of her organization and the team. She has a real passion for everything that she does.",
+      "name": "Kate Manton",
+      "jobPosition": "People Leader, Operations, Project Mgmt",
+      "location": "Ipsos England."
+    },
+    {
+      "text": "Impeccable professional and excellent person. A great mix of talent, commitment and human quality.",
+      "name": "Gustavo Mallo",
+      "jobPosition": "Country Manager",
+      "location": "Nielsen Argentina."
+    },
+    {
+      "text": "Estefania was always proactive, curious, and incredibly pertinent when helping us prepare for large events or small projects that required translation work. She is clear, and straight to the point, but also kind and accommodating of changes. Her language skills are not only top-notch from a technical quality standpoint, but also very human, which helps a lot when bringing teams together on a journey for a common outcome. She'd be my first choice for translation work!",
+      "name": "Rute Marques",
+      "jobPosition": "International Corporate Affairs Leader",
+      "location": "BMS Worldwide Markets"
+    }
+  ],
+  "footer":[
+    {"title":"Our offices"},
+    {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
+    {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
+    {"email":"Info@translingualsolutions.com"},
+    {"privacy":"Privacy Policy"}
+  ],
+  "privacy":[
+    {"title":"Privacy Policy"},
+    {"subtitle":"Professional Secrecy and Confidentiality"},
+    {"one":"Section 8 of the Code of Ethics of the Professional Association of Sworn Translators of the City of Buenos Aires sets forth that:"},
+    {"two":" “Translators shall strictly comply with the professional secrecy and shall strongly refuse to infringe their duty of confidentiality.  Translators shall only be exempted from such duty in the following cases: a) upon the express authorization of the client or the recipient of the translation; b) for their own defense in a Court of Conduct or in a Court of Justice; c) when so required by law”."},
+    {"three":"Shall the client deems it necessary, we may enter into a non-disclosure agreement which ensures greater safety in the handling of the documents involved and which formally ensures our professional secrecy."}
+  ]
+
 }
 
 
