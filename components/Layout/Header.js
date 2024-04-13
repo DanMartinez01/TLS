@@ -2,10 +2,34 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Link as LinkScroll } from "react-scroll";
-import useCustomTranslation from "../../utils/useCustomTranslation";
+import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector";
-import ButtonPrimary from "../misc/ButtonPrimary";
+import { FaInfoCircle } from "react-icons/fa";
+import {
+  MdMiscellaneousServices,
+  MdReviews,
+  MdOutlineRequestPage,
+  MdContactMail,
+} from "react-icons/md";
+
 const Header = () => {
+  const renderIcon = (iconName) => {
+    switch (iconName) {
+      case "FaInfoCircle":
+        return <FaInfoCircle size={24} color="green" />;
+      case "MdMiscellaneousServices":
+        return <MdMiscellaneousServices size={24} color="green" />;
+      case "MdReviews":
+        return <MdReviews size={24} color="green" />;
+      case "MdOutlineRequestPage":
+        return <MdOutlineRequestPage size={24} color="green" />;
+      case "MdContactMail":
+        return <MdContactMail size={24} color="green" />;
+      default:
+        return null;
+    }
+  };
+
   const [activeLink, setActiveLink] = useState(null);
   const [scrollActive, setScrollActive] = useState(false);
   useEffect(() => {
@@ -14,7 +38,8 @@ const Header = () => {
     });
   }, []);
 
-  const { t } = useCustomTranslation();
+  // const { t } = useCustomTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -24,7 +49,7 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="flex flex-row items-center">
             {/* <Image src="/assets/logo.png" width={100} height={60} /> */}
             <a href="/" className="text-green text-bold text-2xl">
@@ -32,83 +57,31 @@ const Header = () => {
             </a>
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
-            <LinkScroll
-              activeClass="active"
-              to="pricing"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("feature");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "pricing"
-                  ? " text-green animation-active "
-                  : " text-black-500 hover:text-green ")
-              }
-            >
-              Como funciona
-            </LinkScroll>
-            {/* <LinkScroll
-              activeClass="active"
-              to="/"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "about"
-                  ? " text-green animation-active "
-                  : " text-black-500 hover:text-green a")
-              }
-            >
-              Home
-            </LinkScroll> */}
-            <LinkScroll
-              activeClass="active"
-              to="services"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("services");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "services"
-                  ? " text-green animation-active "
-                  : " text-black-500 hover:text-green ")
-              }
-            >
-              {t("services")}
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="testimoni"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("testimoni");
-              }}
-              className={
-                "px-4 py-2 mx-2 cursor-pointer animation-hover inline-block relative" +
-                (activeLink === "testimoni"
-                  ? " text-green animation-active "
-                  : " text-black-500 hover:text-green")
-              }
-            >
-              {t("testimonies")}
-            </LinkScroll>
+            {t("header", { returnObjects: true }).map((item, index) => (
+              <LinkScroll
+                activeClass="active"
+                to={item.link}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onSetActive={() => {
+                  setActiveLink(item.link);
+                }}
+                className={`px-4 py-2 mx-1 cursor-pointer animation-hover inline-block relative 
+                  ${
+                    activeLink === item.link
+                      ? "text-green animation-active"
+                      : "text-black-500 hover:text-green"
+                  }`}
+              >
+                {item.label}
+              </LinkScroll>
+            ))}
             <a
               className="bg-green px-4 py-2 text-white-500 rounded-lg"
               href="/uploadFile"
             >
-              Solicitar traduccion
+              {t("contact")}
             </a>
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
@@ -121,135 +94,33 @@ const Header = () => {
       <nav className="w-full fixed lg:hidden bottom-0 left-0 right-0 z-20  shadow-t ">
         <div className="bg-white-500 px-4 sm:px-3">
           <ul className="flex w-full justify-between items-center text-black-500">
-            <LinkScroll
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("about");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "about"
-                  ? "  border-green text-green"
-                  : " border-transparent")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="#486f60"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
+            {t("header", { returnObjects: true }).map((item, index) => (
+              <LinkScroll
+                activeClass="active"
+                to={item.link}
+                spy={true}
+                smooth={true}
+                duration={1000}
+                onSetActive={() => {
+                  setActiveLink(item.link);
+                }}
+                className={`mx-1 sm:mx-2 px-2 sm:px-4 py-2 flex flex-col items-center justify-center text-xs border-t-2 transition-all bg-orange-100" +
+                  ${
+                    activeLink === item.link
+                      ? " border-green text-green"
+                      : " border-transparent"
+                  }`}
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Home
-            </LinkScroll>
-            {/* <LinkScroll
-              activeClass="active"
-              to="feature"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("feature");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "feature"
-                  ? "border-green text-green"
-                  : " border-transparent ")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="green"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
-                />
-              </svg>
-              Feature
-            </LinkScroll> */}
-            <LinkScroll
-              activeClass="active"
-              to="pricing"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("pricing");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "pricing"
-                  ? "  border-green text-green"
-                  : " border-transparent ")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="#486f60"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
-              </svg>
-              Como funciona
-            </LinkScroll>
-            <LinkScroll
-              activeClass="active"
-              to="testimoni"
-              spy={true}
-              smooth={true}
-              duration={1000}
-              onSetActive={() => {
-                setActiveLink("testimoni");
-              }}
-              className={
-                "mx-1 sm:mx-2 px-3 sm:px-4 py-2 flex flex-col items-center text-xs border-t-2 transition-all " +
-                (activeLink === "testimoni"
-                  ? "  border-green text-green"
-                  : " border-transparent ")
-              }
-            >
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="#486f60"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
-                />
-              </svg>
-              {t("testimonies")}
-            </LinkScroll>
-            {/* <LanguageSelector /> */}
+                {item.icon && (
+                  <span className="mr-2">{renderIcon(item.icon)}</span>
+                )}
+                {item.label}
+              </LinkScroll>
+            ))}
+            <span className="flex flex-col justify-center items-center text-xs">
+              <MdContactMail color="green" size={24} />
+              <a href="/uploadFile">Contact Us</a>
+            </span>
           </ul>
         </div>
       </nav>
