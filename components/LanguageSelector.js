@@ -23,7 +23,9 @@ function LanguageSelector() {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="inline-flex justify-center w-full rounded-md border border-gray-100 shadow-sm px-4 py-2 bg-white-500 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="inline-flex justify-center w-full rounded-md border border-gray-100 shadow-sm px-2 py-1
+            md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2
+            bg-white-500 text-xs md:text-sm lg:text-sm xl:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
