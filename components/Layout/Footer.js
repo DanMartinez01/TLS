@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-white-300 py-12">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16 grid grid-rows-6 sm:grid-rows-1 grid-flow-row sm:grid-flow-col grid-cols-3 sm:grid-cols-12 gap-4">
-        <div className="row-span-2 sm:col-span-4 col-start-1 col-end-4 sm:col-end-5 flex flex-col items-start ">
+    <div className="bg-gray-100 pt-16 pb-8 mt-0">
+      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16">
+        <div className="flex flex-col items-start ">
           {/* <Logo className="h-8 w-auto mb-6" /> */}
           <Image
             src={Logo}
@@ -37,7 +37,7 @@ const Footer = () => {
             ©{new Date().getFullYear()} - TransLingual Solutions
           </p>
         </div>
-        <div className="row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
+        <div className="flex flex-col mb-10">
           {t("footer", { returnObjects: true }).map((item, index) => (
             <ul className="text-black-500 ">
               <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
