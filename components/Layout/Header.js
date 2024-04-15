@@ -50,7 +50,10 @@ const Header = () => {
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-4">
           <div className="flex flex-row items-center">
             {/* <Image src="/assets/logo.png" width={100} height={60} /> */}
-            <a href="/" className="text-green text-bold text-2xl">
+            <a
+              href="/"
+              className="text-green text-bold textxl md:text-2xl lg:text-2xl xl:text-2xl"
+            >
               Translingual solutions
             </a>
           </div>
@@ -78,9 +81,9 @@ const Header = () => {
           </ul>
           <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <a
-              className="bg-green px-2 py-1 md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2 
-              text-xs md:text-sm lg:text-m xl:text-sm
-              text-white-500 rounded-lg"
+              className="inline-flex justify-center w-full rounded-md border border-gray-100 shadow-sm px-2 py-1
+            md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2 mr-2
+            bg-green text-xs md:text-sm lg:text-sm xl:text-sm font-medium text-white-500 hover:bg-gray-50"
               href="/uploadFile"
             >
               {t("contact")}
@@ -111,9 +114,7 @@ const Header = () => {
                       : " border-transparent"
                   }`}
               >
-                {item.icon && (
-                  <span className="bg-orange-100">{renderIcon(item.icon)}</span>
-                )}
+                {item.icon && <span className="">{renderIcon(item.icon)}</span>}
                 {item.label}
               </LinkScroll>
             ))}
