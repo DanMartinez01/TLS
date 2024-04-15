@@ -1,6 +1,7 @@
 // LanguageSelector.js
 import React, { useState } from "react";
 import useCustomTranslation from "../utils/useCustomTranslation";
+import { IoIosArrowDown } from "react-icons/io";
 
 function LanguageSelector() {
   const { changeLanguage } = useCustomTranslation();
@@ -23,28 +24,16 @@ function LanguageSelector() {
           <button
             type="button"
             onClick={toggleDropdown}
-            className="inline-flex justify-center w-full rounded-md border border-gray-100 shadow-sm px-2 py-1
+            className="inline-flex justify-center items-center  w-full rounded-md border border-gray-100 shadow-sm px-2 py-1
             md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2
             bg-white-500 text-xs md:text-sm lg:text-sm xl:text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             id="options-menu"
             aria-haspopup="true"
             aria-expanded="true"
           >
-            Language
+            <p className="mr-1">Language</p>
             {/* Toggle arrow */}
-            {/* <svg
-              className="-mr-1 ml-2 h-5 w-5"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-              aria-hidden="true"
-            >
-              <path
-                fillRule="evenodd"
-                d="M6.293 7.293a1 1 0 011.414 0L10 9.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414zM10 4a1 1 0 100-2 1 1 0 000 2z"
-                clipRule="evenodd"
-              />
-            </svg> */}
+            <IoIosArrowDown />
           </button>
         </div>
 
