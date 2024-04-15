@@ -53,7 +53,7 @@ const Testimoni = () => {
         {/* {Reviews.reviews.map((item, index) => ( */}
         {t("reviews", { returnObjects: true }).map((item, index) => (
           <div className="px-3 flex items-stretch" key={index}>
-            <div className="h-96 border-2 border-gray-500 hover:border-green transition-all rounded-lg p-4 flex flex-col">
+            <div className="h-auto border-2 border-gray-500 hover:border-green transition-all rounded-lg p-4 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
                 <div className="flex order-2 xl:order-1">
                   <div className="mr-4 bg-green flex items-center justify-center w-12 h-12 rounded-full">
@@ -83,7 +83,7 @@ const Testimoni = () => {
                   </span>
                 </div>
               </div>
-              <p className="mt-5 text-left">“{item.text}”.</p>
+              <p className="my-4 text-left">“{item.text}”.</p>
             </div>
           </div>
         ))}
