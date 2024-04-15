@@ -4,19 +4,23 @@
    
     {
       "label": "Quienes Somos",
-      "link": "feature"
+      "link": "feature",
+      "icon": "FaInfoCircle"
     },
     {
       "label": "Servicios e Industrias",
-      "link": "services"
+      "link": "services",
+      "icon": "MdMiscellaneousServices"
     },
     {
       "label": "Reseñas",
-      "link": "testimoni"
+      "link": "testimoni",
+      "icon": "MdReviews"
     },
     {
       "label": "Solicitar una Traducción",
-      "link": "pricing"
+      "link": "pricing",
+      "icon": "MdOutlineRequestPage"
     }
   ],
   "contact":"Contacto",
