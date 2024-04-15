@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 const Upload = () => {
   const [pdfSrc, setPdfSrc] = useState();
   const [uploadData, setUploadData] = useState();
+  const [fileName, setFileName] = useState("");
+  const [isSent, setIsSent] = useState(false);
 
   function handleOnChange(changeEvent) {
     const reader = new FileReader();
@@ -12,11 +15,12 @@ const Upload = () => {
       setUploadData(undefined);
     };
 
+    // Set file name
+    setFileName(changeEvent.target.files[0].name);
     reader.readAsDataURL(changeEvent.target.files[0]);
   }
   async function handleOnSubmit(event) {
     event.preventDefault();
-
     const form = event.currentTarget;
 
     // Collect form data
@@ -34,6 +38,15 @@ const Upload = () => {
 
     // Send email with PDF URL and form data
     await sendEmail({ pdfUrl, name, email, phone, moreDetails, language });
+
+    // Set "sent!" message state
+    setIsSent(true);
+
+    // Reset the form
+    form.reset();
+    setPdfSrc(null);
+    setUploadData(null);
+    setFileName("");
   }
 
   // Function to upload PDF
@@ -162,15 +175,30 @@ const Upload = () => {
           >
             Choose File
           </label>
+          {fileName && (
+            <span className="text-green font-bold-400 text-center mx-auto mt-2 ">
+              {" "}
+              {fileName}
+            </span>
+          )}
         </div>
 
-        {pdfSrc && !uploadData && (
+        {pdfSrc && !uploadData && !isSent && (
           <button
             type="submit"
             className="w-2/4 bg-green hover:bg-yellow-200 text-white-300 py-2 px-8 rounded-lg cursor-pointer inline-block mt-10"
           >
             Upload PDF
           </button>
+        )}
+
+        {isSent && (
+          <span className="mt-4 flex flex-row items-center justify-center">
+            <p className="text-3xl text-black-500 font-semibold mx-1 ">
+              Consulta enviada
+            </p>
+            <FaCheckCircle color="green" size={24} />
+          </span>
         )}
 
         {uploadData && (
