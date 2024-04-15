@@ -16,15 +16,15 @@ const Header = () => {
   const renderIcon = (iconName) => {
     switch (iconName) {
       case "FaInfoCircle":
-        return <FaInfoCircle size={24} color="green" />;
+        return <FaInfoCircle size={24} color="#486f60" />;
       case "MdMiscellaneousServices":
-        return <MdMiscellaneousServices size={24} color="green" />;
+        return <MdMiscellaneousServices size={24} color="#486f60" />;
       case "MdReviews":
-        return <MdReviews size={24} color="green" />;
+        return <MdReviews size={24} color="#486f60" />;
       case "MdOutlineRequestPage":
-        return <MdOutlineRequestPage size={24} color="green" />;
+        return <MdOutlineRequestPage size={24} color="#486f60" />;
       case "MdContactMail":
-        return <MdContactMail size={24} color="green" />;
+        return <MdContactMail size={24} color="#486f60" />;
       default:
         return null;
     }
@@ -37,8 +37,6 @@ const Header = () => {
       setScrollActive(window.scrollY > 20);
     });
   }, []);
-
-  // const { t } = useCustomTranslation();
   const { t } = useTranslation();
 
   return (
@@ -70,21 +68,23 @@ const Header = () => {
                 className={`px-4 py-2 mx-1 cursor-pointer animation-hover inline-block relative 
                   ${
                     activeLink === item.link
-                      ? "text-green animation-active"
+                      ? "text-black-500"
                       : "text-black-500 hover:text-green"
                   }`}
               >
                 {item.label}
               </LinkScroll>
             ))}
+          </ul>
+          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <a
-              className="bg-green px-4 py-2 text-white-500 rounded-lg"
+              className="bg-green px-2 py-1 md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2 
+              text-xs md:text-sm lg:text-m xl:text-sm
+              text-white-500 rounded-lg"
               href="/uploadFile"
             >
               {t("contact")}
             </a>
-          </ul>
-          <div className="col-start-10 col-end-12 font-medium flex justify-end items-center">
             <LanguageSelector />
           </div>
         </nav>
@@ -104,7 +104,7 @@ const Header = () => {
                 onSetActive={() => {
                   setActiveLink(item.link);
                 }}
-                className={`mx-1 sm:mx-2 px-2 sm:px-4 py-2 flex flex-col items-center justify-center text-xs border-t-2 transition-all bg-orange-100" +
+                className={`py-2 flex flex-col items-center justify-center text-xs border-t-2 transition-all" +
                   ${
                     activeLink === item.link
                       ? " border-green text-green"
@@ -112,15 +112,15 @@ const Header = () => {
                   }`}
               >
                 {item.icon && (
-                  <span className="mr-2">{renderIcon(item.icon)}</span>
+                  <span className="bg-orange-100">{renderIcon(item.icon)}</span>
                 )}
                 {item.label}
               </LinkScroll>
             ))}
-            <span className="flex flex-col justify-center items-center text-xs">
+            {/* <span className="flex flex-col justify-center items-center text-xs">
               <MdContactMail color="green" size={24} />
               <a href="/uploadFile">Contact Us</a>
-            </span>
+            </span> */}
           </ul>
         </div>
       </nav>
