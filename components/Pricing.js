@@ -63,9 +63,19 @@ const Pricing = () => {
                   <div className="p-4 lg:p-0 mt-6 lg:mt-16">
                     {renderIcon(item.icon)}
                   </div>
-                  <p className="text-lg text-black-600 text-start my-2 sm:my-7">
+                  {/* <p className="text-lg text-black-600 text-start my-2 sm:my-7">
                     {item.text}
-                  </p>
+                  </p> */}
+                  {index === 0 ? (
+                    <a
+                      href="/uploadFile"
+                      className="text-green font-semibold hover:underline"
+                    >
+                      {item.text}
+                    </a>
+                  ) : (
+                    item.text
+                  )}
                 </motion.div>
               </ScrollAnimationWrapper>
             ))}
