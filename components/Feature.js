@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useMemo, useState, useEffect } from "react";
+
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -12,7 +13,7 @@ const Feature = () => {
   const animationVariants = {
     hidden: {
       opacity: 0,
-      y: 50, // Move down by 50 pixels
+      y: 40, // Move down by 50 pixels
     },
     visible: {
       opacity: 1,
@@ -26,30 +27,37 @@ const Feature = () => {
 
   return (
     <div
-      className="w-full h-2/4  sm:mb-14 py-16 px-6 sm:px-8 lg:px-16  bg-green"
+      className="w-full h-2/4  sm:mb-14 py-12 px-6 sm:px-8 lg:px-16  bg-green"
       id="feature"
     >
-      <div className="flex flex-col xl:flex-row justify-center items-center">
-        <ScrollAnimationWrapper>
-          <motion.div
-            className="flex flex-col w-full xl:w-3/4"
-            variants={scrollAnimation}
+      <div className="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
+        <div className="flex flex-col w-full xl:w-3/4">
+          <motion.h1
+            initial={{ x: -1000 }} // Initial position (off-screen to the left)
+            animate={{ x: 0 }} // Final position (appear from left)
+            transition={{ duration: 0.9 }} // Animation duration
+            className="text-3xl lg:text-5xl font-medium leading-relaxed text-white-500 lg:mb-4"
           >
-            <motion.h3
-              className="text-3xl lg:text-5xl font-medium leading-relaxed text-white-500 lg:mb-4"
-              variants={animationVariants}
-              initial="hidden"
-              animate="visible"
-            >
-              Translingual Solutions
-            </motion.h3>
+            About Us
+          </motion.h1>
+
+          <p>
             {t("aboutUs", { returnObjects: true }).map((item, index) => (
-              <p className="text-white-500 leading-relaxed">{item}</p>
+              <span class="inline-flex items-baseline">
+                <span className="text-white-500">{item.one}</span>
+                <span className="text-white-500 font-bold pl-1">
+                  {item.two}
+                </span>
+                <span className="text-white-500">{item.three}</span>
+                <span className="text-white-500">{item.four}</span>
+                <span className="text-white-500 font-bold">{item.five}</span>
+                <span className="text-white-500">{item.six}</span>
+              </span>
             ))}
-          </motion.div>
-        </ScrollAnimationWrapper>
-        <ScrollAnimationWrapper className="hidden xl:flex xl:w-full">
-          <motion.div className="h-96 w-96" variants={scrollAnimation}>
+          </p>
+        </div>
+        <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end">
+          <motion.div className="h-98 w-96" variants={scrollAnimation}>
             <Image
               src="/assets/logo-2.png"
               alt="Translingual Solutions"
