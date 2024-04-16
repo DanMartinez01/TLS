@@ -13,7 +13,6 @@ export default function Home() {
       <Layout>
         <SimpleSlider />
         <Pricing />
-        {/* <Hero /> */}
         <Services />
         <Feature />
       </Layout>
