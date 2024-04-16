@@ -8,9 +8,9 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-gray-100 pt-16 pb-8 mt-0">
-      <div className="max-w-screen-xl w-full mx-auto px-6 sm:px-8 lg:px-16">
-        <div className="flex flex-col items-start ">
+    <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 pb-8 mt-0">
+      <div className="max-w-screen-xl w-full  px-6 sm:px-8 lg:px-8 xl:px-12">
+        <div className="flex flex-col items-start">
           {/* <Logo className="h-8 w-auto mb-6" /> */}
           <Image
             src={Logo}
