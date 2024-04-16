@@ -5,15 +5,16 @@ import { useRouter } from "next/router";
 const defaultMeta = {
   title: "Translingual Solutions",
   siteName: "TransLingual Solutions",
-  description: "Translation services",
+  description:
+    "In a world where effective communication knows no borders, Translingual Solutions stands as a beacon of expertise and innovation.",
   // change base url of your web (without '/' at the end)
-  url: "https://next-landing-vpn.vercel.app",
+  url: "https://www.translingualsolutions.com",
   type: "website",
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "/favicon.jpg",
-  author: "Lorem Ipsum",
+  image: "/favicon/logo-2.png",
+  author: "Daniela Martinez",
 };
 
 /**
@@ -79,10 +80,10 @@ const SeoHead = (props) => {
       {/* Favicons */}
 
       {/* Windows 8 app icon */}
-      <meta name="msapplication-TileColor" content="#F53838" />
-      <meta name="msapplication-TileImage" content="/favicon.jpg" />
+      <meta name="msapplication-TileColor" content="#4b7263" />
+      <meta name="msapplication-TileImage" content="/favicon/logo-2.png" />
       {/* Accent color on supported browser */}
-      <meta name="theme-color" content="#F53838" />
+      <meta name="theme-color" content="#4b7263" />
     </Head>
   );
 };
