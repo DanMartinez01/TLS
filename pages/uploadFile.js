@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Hero from "../components/Hero";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import Upload from "../components/Upload";
@@ -18,7 +19,7 @@ const uploadFile = () => {
         </a>
         <LanguageSelector />
       </div>
-      <div className="relative w-full h-72 overflow-hidden">
+      {/* <div className="relative w-full h-72 overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url("/assets/book.jpg")` }}
@@ -34,12 +35,10 @@ const uploadFile = () => {
             Get a free quote
           </motion.h1>
         </div>
-      </div>
+      </div> */}
+      <Hero />
 
-      <div className="w-full  mx-auto  py-10 justify-center bg-white">
-        <h1 className="w-full lg:w-2/4 md:w-2/4 mx-auto text-center px-4 text-4xl font-semibold flex items-center text-black-500">
-          Completa el formulario y te enviamos la cotizacion
-        </h1>
+      <div className="w-full  mx-auto  pt-4 pb-36 justify-center bg-white">
         <Upload />
       </div>
       <Footer />
