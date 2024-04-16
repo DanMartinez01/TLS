@@ -96,7 +96,7 @@ const Header = () => {
       {/* Mobile Navigation */}
       <nav className="w-full fixed lg:hidden bottom-0 left-0 right-0 z-20  shadow-t ">
         <div className="bg-white-500 px-2">
-          <ul className="flex w-full justify-between items-start text-black-500">
+          <ul className="flex w-full justify-around items-start text-black-500">
             {t("header", { returnObjects: true }).map((item, index) => (
               <LinkScroll
                 activeClass="active"
@@ -107,7 +107,7 @@ const Header = () => {
                 onSetActive={() => {
                   setActiveLink(item.link);
                 }}
-                className={`py-2 flex flex-col items-center justify-center text-xs border-t-2 transition-all bg-orange-100" +
+                className={`py-2 flex flex-col items-center justify-center text-xs border-t-2 transition-all" +
                   ${
                     activeLink === item.link
                       ? " border-green text-green"
