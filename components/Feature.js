@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React, { useMemo, useState, useEffect } from "react";
-
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
 import { useTranslation } from "react-i18next";
+import ButtonPrimary from "./misc/ButtonPrimary";
 
 const Feature = () => {
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
@@ -45,7 +45,7 @@ const Feature = () => {
             {t("aboutUs", { returnObjects: true }).map((item, index) => (
               <span class="inline-flex items-baseline">
                 <span className="text-white-500">{item.one}</span>
-                <span className="text-white-500 font-bold pl-1">
+                <span className="text-white-500 font-bold -pr-1">
                   {item.two}
                 </span>
                 <span className="text-white-500">{item.three}</span>
@@ -55,6 +55,18 @@ const Feature = () => {
               </span>
             ))}
           </p>
+          <ScrollAnimationWrapper>
+            <motion.div
+              className="h-98 w-96 mx-auto mt-10   flex justify-center"
+              variants={scrollAnimation}
+            >
+              <ButtonPrimary
+                addClass="bg-grayTheme text-green"
+                children={t("contact")}
+                link="/uploadFile"
+              />
+            </motion.div>
+          </ScrollAnimationWrapper>
         </div>
         <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end">
           <motion.div className="h-98 w-96" variants={scrollAnimation}>
