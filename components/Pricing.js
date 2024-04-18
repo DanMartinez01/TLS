@@ -105,13 +105,6 @@ const Pricing = () => {
             >
               {t("reviewsTitle")}
             </motion.h3>
-            {/* <motion.p
-              variants={scrollAnimation}
-              className="leading-normal mx-auto mb-2 mt-4 w-10/12 sm:w-7/12 lg:w-6/12"
-            >
-              These are the stories of our customers who have joined us with
-              great pleasure when using this crazy feature.
-            </motion.p> */}
           </ScrollAnimationWrapper>
           <ScrollAnimationWrapper className="w-full flex flex-col py-12">
             <motion.div variants={scrollAnimation}>
