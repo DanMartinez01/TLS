@@ -29,11 +29,11 @@
   "testimonies":"Testimonies",
 
   "aboutUs": 
-  [{"one":"Somos"},
+  [{"one":"In a world where effective communication knows no borders,"},
   {"two":" Translingual Solutions,"},
-  {"three":"una empresa joven y dinámica nacida de la necesidad de transitar nuevos desafíos en el mundo de la traducción.Con más de 20 años de experiencia en la industria, nuestra Directora, Estefanía Carbone, ha construido una carrera destacada como líder de equipos regionales y globales en empresas multinacionales de alto nivel. Su experiencia y la expansión de sus relaciones multiculturales garantizan la correcta ejecución e integración de programas y procesos de traducción, asegurando que los resultados superen las expectativas de los clientes en términos de calidad y eficiencia. Hoy, todo ese conocimiento se transforma en una ventaja para nuestros clientes a través de"},
+  {"three":"stands as a beacon of expertise and innovation.With over 20 years of experience in the translation industry, our founder, Estefanía Carbone, has honed her skills as a leader of multinational teams, ensuring flawless execution and integration of language programs that consistently exceed client expectations in both quality and timeliness.Now, we channel that wealth of knowledge into"},
   {"five":"Translingual Solutions."},
- {"six":"Contamos con un equipo de expertos en traducción especializado en proporcionar soluciones lingüísticas de alta calidad para empresas de todo el mundo. Nuestra experiencia y dedicación nos permiten garantizar que nuestras soluciones se adaptan perfectamente a las necesidades únicas de cada cliente, superando siempre sus expectativas.Con sede en Estados Unidos y en Argentina, ¡estamos listos para asumir el desafío de ayudar a tu empresa a crecer y prosperar a través de la excelencia en la traducción!"}
+ {"six":" a company dedicated to providing the premier language services you need to thrive in a global marketplace.  Our team of seasoned professionals offers the ideal blend of linguistic prowess and industry insight to deliver solutions that empower your business to break down language barriers and foster international success. Whether you need translation, localization, editing, or proofreading services, trust Translingual Solutions to guide you. Our unwavering commitment to quality, customer satisfaction, and cultural nuance sets us apart. Experience the Translingual Solutions difference and unlock your organization's full potential in a multilingual world."}
 ],
   
   
@@ -111,7 +111,8 @@
     {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
     {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
     {"email":"Info@translingualsolutions.com"},
-    {"privacy":"Privacy Policy"}
+    {"privacy":"Privacy Policy"},
+    {"certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR| Member 6163 |Registration XVII - P° 14"}
   ],
   "privacy":[
     {"title":"Privacy Policy"},
@@ -119,7 +120,10 @@
     {"one":"Section 8 of the Code of Ethics of the Professional Association of Sworn Translators of the City of Buenos Aires sets forth that:"},
     {"two":" “Translators shall strictly comply with the professional secrecy and shall strongly refuse to infringe their duty of confidentiality.  Translators shall only be exempted from such duty in the following cases: a) upon the express authorization of the client or the recipient of the translation; b) for their own defense in a Court of Conduct or in a Court of Justice; c) when so required by law”."},
     {"three":"Shall the client deems it necessary, we may enter into a non-disclosure agreement which ensures greater safety in the handling of the documents involved and which formally ensures our professional secrecy."}
-  ]
+  ],
+  "formMsg":"Please include any significant details, such as urgent delivery date or translation requiring legal validation at Sworn Translators’ Association of the City of Buenos Aires."
+
+
 
 }
 

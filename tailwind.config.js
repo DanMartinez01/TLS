@@ -41,6 +41,8 @@ module.exports = {
         500: "#DDDDDD",
       },
       green: "#4b7263",
+      grayTheme: "#eff4f2",
+      blueLink: "#4455be",
     },
     extend: {},
   },

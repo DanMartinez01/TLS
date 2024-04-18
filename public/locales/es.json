@@ -24,15 +24,14 @@
     }
   ],
   "contact":"Contacto",
-    "welcome": "¡Bienvenido a mi aplicación de Next.js!",
     "services": "Servicios",
     "testimonies":"Testimonios",
     "aboutUs": 
     [{"one":"Somos"},
     {"two":"Translingual Solutions"},
-    {"three": ",una empresa joven y dinámica nacida de la necesidad de transitar nuevos desafíos en el mundo de la traducción.Con más de 20 años de experiencia en la industria, nuestra Directora, Estefanía Carbone, ha construido una carrera destacada como líder de equipos regionales y globales en empresas multinacionales de alto nivel. Su experiencia y la expansión de sus relaciones multiculturales garantizan la correcta ejecución e integración de programas y procesos de traducción, asegurando que los resultados superen las expectativas de los clientes en términos de calidad y eficiencia. Hoy, todo ese conocimiento se transforma en una ventaja para nuestros clientes a través de,"},
-    {"five" :"Translingual Solutions"},
-   {"six":  ", Contamos con un equipo de expertos en traducción especializado en proporcionar soluciones lingüísticas de alta calidad para empresas de todo el mundo. Nuestra experiencia y dedicación nos permiten garantizar que nuestras soluciones se adaptan perfectamente a las necesidades únicas de cada cliente, superando siempre sus expectativas.Con sede en Estados Unidos y en Argentina, ¡estamos listos para asumir el desafío de ayudar a tu empresa a crecer y prosperar a través de la excelencia en la traducción!"}
+    {"three": "una empresa joven y dinámica nacida de la necesidad de transitar nuevos desafíos en el mundo de la traducción.Con más de 20 años de experiencia en la industria, nuestra Directora, Estefanía Carbone, ha construido una carrera destacada como líder de equipos regionales y globales en empresas multinacionales de alto nivel. Su experiencia y la expansión de sus relaciones multiculturales garantizan la correcta ejecución e integración de programas y procesos de traducción, asegurando que los resultados superen las expectativas de los clientes en términos de calidad y eficiencia. Hoy, todo ese conocimiento se transforma en una ventaja para nuestros clientes a través de,"},
+    {"five" :"Translingual Solutions."},
+   {"six":  "Contamos con un equipo de expertos en traducción especializado en proporcionar soluciones lingüísticas de alta calidad para empresas de todo el mundo. Nuestra experiencia y dedicación nos permiten garantizar que nuestras soluciones se adaptan perfectamente a las necesidades únicas de cada cliente, superando siempre sus expectativas.Con sede en Estados Unidos y en Argentina, ¡estamos listos para asumir el desafío de ayudar a tu empresa a crecer y prosperar a través de la excelencia en la traducción!"}
   ],
     "servtitle":"Servicios & Industrias",
     "servsubtitle":"Servicios",
@@ -105,7 +104,8 @@
         {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
         {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
         {"email":"Info@translingualsolutions.com"},
-        {"privacy":"Política de Privacidad"}
+        {"privacy":"Política de Privacidad"},
+        {"certificate":"Antonina Estefanía Carbone | TRADUCTORA PÚBLICA | Matrícula 6163 |Tomo XVII - Folio 14"}
       ],
       "privacy":[
         {"title":"Política de Privacidad"},
@@ -113,7 +113,8 @@
         {"one":"El Art. 8 del Código de Ética del Colegio de Traductores Públicos de la Ciudad de Buenos Aires establece que:"},
         {"two":" “El traductor debe respetar rigurosamente el secreto profesional y negarse rotundamente a infringir su deber de confidencialidad. Solo quedará exceptuado de tal deber: a) cuando el cliente o destinatario de su traducción lo autorice expresamente; b) si se tratare de su propia defensa ante el Tribunal de Conducta o ante un tribunal de justicia; c) cuando la ley se lo exija”."},
         {"three":"En el caso de que el cliente lo considere necesario, se podrá suscribir un Acuerdo de Confidencialidad a los fines de garantizar mayor seguridad en el manejo de los documentos involucrados, sellando de esta manera nuestro secreto profesional."}
-      ]
+      ],
+      "formMsg":"Por favor incluir algún dato que consideres importante saber, cómo la urgencia de la entrega, o si la traducción debe ser legalizada ante el CTPCBA"
   
 
   }
