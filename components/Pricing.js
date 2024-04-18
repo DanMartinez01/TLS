@@ -4,6 +4,8 @@ import { RiUploadCloud2Fill } from "react-icons/ri";
 import { MdOutlinePriceChange } from "react-icons/md";
 import { MdPayments } from "react-icons/md";
 import { RiFolderReceivedFill } from "react-icons/ri";
+import { TbArrowBigRightLinesFilled } from "react-icons/tb";
+import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import getScrollAnimation from "../utils/getScrollAnimation";
 import ScrollAnimationWrapper from "./Layout/ScrollAnimationWrapper";
@@ -49,35 +51,47 @@ const Pricing = () => {
           </ScrollAnimationWrapper>
           <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-4 gap-4 lg:gap-12 py-8 lg:py-12 px-6 sm:px-0 lg:px-6">
             {t("stepByStep", { returnObjects: true }).map((item, index) => (
-              <ScrollAnimationWrapper className="flex justify-center">
-                <motion.div
-                  variants={scrollAnimation}
-                  className="flex flex-col justify-start items-center border-2 border-gray-500 rounded-xl py-4 px-4 lg:px-10 xl:px-16"
-                  whileHover={{
-                    scale: 1.1,
-                    transition: {
-                      duration: 0.2,
-                    },
-                  }}
-                >
-                  <div className="p-4 lg:p-0 mt-6 lg:mt-16">
-                    {renderIcon(item.icon)}
-                  </div>
-                  {/* <p className="text-lg text-black-600 text-start my-2 sm:my-7">
-                    {item.text}
-                  </p> */}
-                  {index === 0 ? (
-                    <a
-                      href="/uploadFile"
-                      className="text-green font-semibold hover:underline"
-                    >
-                      {item.text}
-                    </a>
-                  ) : (
-                    item.text
-                  )}
-                </motion.div>
-              </ScrollAnimationWrapper>
+              <>
+                <ScrollAnimationWrapper className="flex justify-center">
+                  <motion.div
+                    variants={scrollAnimation}
+                    className="flex flex-col justify-start items-center border-2 border-gray-100 rounded-xl py-4 px-4 lg:px-10 xl:px-16 shadow-xl "
+                    whileHover={{
+                      scale: 1.1,
+                      transition: {
+                        duration: 0.2,
+                      },
+                    }}
+                  >
+                    <div className="p-4 lg:p-0 mt-6 lg:mt-12">
+                      {renderIcon(item.icon)}
+                    </div>
+                    {index === 0 ? (
+                      <a
+                        href="/uploadFile"
+                        className="text-blueLink font-semibold hover:underline underline underline-offset-1"
+                      >
+                        {item.text}
+                      </a>
+                    ) : (
+                      item.text
+                    )}
+                    {index < 3 ? (
+                      <TbArrowBigRightLinesFilled
+                        size={48}
+                        color="#4455be"
+                        className="mx-auto mt-auto"
+                      />
+                    ) : (
+                      <FaCheckCircle
+                        size={44}
+                        color="green"
+                        className="mx-auto mt-auto"
+                      />
+                    )}
+                  </motion.div>
+                </ScrollAnimationWrapper>
+              </>
             ))}
           </div>
         </div>
