@@ -38,7 +38,7 @@ const Feature = () => {
             transition={{ duration: 0.9 }} // Animation duration
             className="text-3xl lg:text-5xl font-medium leading-relaxed text-white-500 lg:mb-4"
           >
-            About Us
+            {t("aboutTitle")}
           </motion.h1>
 
           <p>
