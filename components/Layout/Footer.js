@@ -19,7 +19,9 @@ const Footer = () => {
             height={180}
           />
           <p className="mb-4">
-            <strong className="font-medium">TransLingual Solutions</strong>
+            <strong className="font-medium">
+              <a href="/">TransLingual Solutions</a>
+            </strong>
             {/* is a
             private virtual network that has unique features and has high
             security. */}
@@ -54,6 +56,9 @@ const Footer = () => {
               </li>
               <li className="my-2 hover:text-green cursor-pointer transition-all">
                 <a href="/privacy"> {item.privacy}</a>
+              </li>
+              <li className="my-2 hover:text-green cursor-pointer transition-all">
+                <a href="/privacy"> {item.certificate}</a>
               </li>
             </ul>
           ))}
