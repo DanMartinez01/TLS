@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonPrimary = ({ children, addClass }) => {
+const ButtonPrimary = ({ children, addClass, link }) => {
   return (
     <button
       className={
@@ -8,7 +8,7 @@ const ButtonPrimary = ({ children, addClass }) => {
         addClass
       }
     >
-      {children}
+      <a href={link}>{children} </a>
     </button>
   );
 };
