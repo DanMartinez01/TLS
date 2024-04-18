@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Footer = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 pb-8 mt-0">
+    <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 mt-0">
       <div className="max-w-screen-xl w-full  px-6 sm:px-8 lg:px-8 xl:px-12">
         <div className="flex flex-col items-start">
           {/* <Logo className="h-8 w-auto mb-6" /> */}
@@ -39,7 +39,7 @@ const Footer = () => {
             ©{new Date().getFullYear()} - TransLingual Solutions
           </p>
         </div>
-        <div className="flex flex-col mb-10">
+        <div className="flex flex-col mb-2">
           {t("footer", { returnObjects: true }).map((item, index) => (
             <ul className="text-black-500 ">
               <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
@@ -57,12 +57,21 @@ const Footer = () => {
               <li className="my-2 hover:text-green cursor-pointer transition-all">
                 <a href="/privacy"> {item.privacy}</a>
               </li>
-              <li className="my-2 hover:text-green cursor-pointer transition-all">
-                <a href="/privacy"> {item.certificate}</a>
-              </li>
             </ul>
           ))}
         </div>
+      </div>
+      <div className="w-full flex flex-row items-center bg-green px-6 sm:px-8 lg:px-8 xl:px-12 py-4 pb-24 md:pb-20 lg:pb-14 xl:pb-12">
+        <p className="mt-auto mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
+          {t("certificate")}
+        </p>
+        <Image
+          src={t("icon")}
+          width={48}
+          height={48}
+          // className="mt-auto ml-2"
+          className="mt-auto ml-2 w-72 h- md:w-36 md:h-36 lg:w-48 lg:h-48"
+        />
       </div>
     </div>
   );
