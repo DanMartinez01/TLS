@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Upload = () => {
+  const { t } = useTranslation();
+
   const [pdfSrc, setPdfSrc] = useState();
   const [uploadData, setUploadData] = useState();
   const [fileName, setFileName] = useState("");
@@ -114,7 +117,7 @@ const Upload = () => {
             required
           />
           <label htmlFor="name" className="mb-1">
-            Full name<span className="text-red-500">*</span>/Nombre completo
+            Full name<span className="text-red-500"></span>/Nombre completo*
           </label>
           <input
             type="text"
@@ -136,7 +139,7 @@ const Upload = () => {
             required
           />
           <label htmlFor="phone" className="mb-1">
-            Phone<span className="text-red-500">*</span>/Telefono
+            Phone<span className="text-red-500"></span>/Telefono*
           </label>
           <input
             type="tel"
@@ -148,16 +151,16 @@ const Upload = () => {
           />
           <label htmlFor="more_details" className="mb-1">
             More details (optional)
-            <span className="text-black">/Mas informacion (opcional)</span>
+            <span className="text-black">/Mas información* (opcional)</span>
           </label>
           <textarea
             name="more_details"
             id="more_details"
-            placeholder="More Details..."
+            placeholder={t("formMsg")}
             className="w-full block border border-gray-300 focus:border-2 focus:border-green-500 py-3 px-2 rounded-md mb-2 text-black-500"
           ></textarea>
           <label htmlFor="language" className="mb-1">
-            Translate to<span className="text-red-500">*</span>/Traducir a
+            Translate to<span className="text-red-500"></span>/Traducir a*
           </label>
           <select
             name="language"
