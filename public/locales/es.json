@@ -26,6 +26,8 @@
   "contact":"Contacto",
     "services": "Servicios",
     "testimonies":"Testimonios",
+
+    "aboutTitle":"Quiénes somos",
     "aboutUs": 
     [{"one":"Somos"},
     {"two":"Translingual Solutions"},
@@ -104,9 +106,10 @@
         {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
         {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
         {"email":"Info@translingualsolutions.com"},
-        {"privacy":"Política de Privacidad"},
-        {"certificate":"Antonina Estefanía Carbone | TRADUCTORA PÚBLICA | Matrícula 6163 |Tomo XVII - Folio 14"}
+        {"privacy":"Política de Privacidad"}
       ],
+      "certificate":"Antonina Estefanía Carbone | TRADUCTORA PÚBLICA | Matrícula 6163 |Tomo XVII - Folio 14",
+       "icon":"/assets/ctpba.png",
       "privacy":[
         {"title":"Política de Privacidad"},
         {"subtitle":"Secreto profesional y confidencialidad"},

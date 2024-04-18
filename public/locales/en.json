@@ -24,10 +24,9 @@
     }
   ],
   "contact":"Contact Us",
-  "welcome": "Welcome to my Next.js app!",
   "services": "Services",
   "testimonies":"Testimonies",
-
+"aboutTitle":"About Us",
   "aboutUs": 
   [{"one":"In a world where effective communication knows no borders,"},
   {"two":" Translingual Solutions,"},
@@ -111,9 +110,11 @@
     {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
     {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
     {"email":"Info@translingualsolutions.com"},
-    {"privacy":"Privacy Policy"},
-    {"certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR| Member 6163 |Registration XVII - P° 14"}
+    {"privacy":"Privacy Policy"}
   ],
+  "certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR| Member 6163 |Registration XVII - P° 14",
+"icon":"/assets/ctpba.png",
+
   "privacy":[
     {"title":"Privacy Policy"},
     {"subtitle":"Professional Secrecy and Confidentiality"},
