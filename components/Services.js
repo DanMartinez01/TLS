@@ -15,12 +15,12 @@ const Services = () => {
       <div className="flex flex-col justify-center md:flex-row lg:flex-row xl:flex-row pb-8">
         {/* Services Card */}
         <motion.div className="flex flex-col items-center mt-4 mx-auto w-3/4">
-          <h2 className="text-2xl text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-8">
+          <h2 className="text-2xl text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-4">
             {t("servsubtitle")}
           </h2>
           <div className="my-4 space-y-10 border rounded-lg border-gray-500 border-2 py-6 h-full w-full md:w-2/4">
             {t("servicesList", { returnObjects: true }).map((item, index) => (
-              <div key={index} className="flex items-center">
+              <div key={index} className="flex items-center px-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
                   <FaCheckCircle size={20} color="#486f60" />
                 </div>
@@ -36,12 +36,12 @@ const Services = () => {
 
         {/* Industries Card */}
         <motion.div className="flex flex-col items-center mt-4 mx-auto w-3/4">
-          <h2 className="text-2xl text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-8">
+          <h2 className="text-2xl text-center font-bold-700 md:text-start lg:text-start xl:text-start sm:text-3xl mb-4">
             {t("indsubtitle")}
           </h2>
           <div className="my-4 space-y-10 border rounded-lg border-gray-500 border-2 py-6 h-full  w-full md:w-2/4">
             {t("industriesList", { returnObjects: true }).map((item, index) => (
-              <div key={index} className="flex items-center">
+              <div key={index} className="flex items-center px-4">
                 <div className="flex items-center justify-center w-12 h-12 rounded-md">
                   <FaCheckCircle size={20} color="#486f60" />
                 </div>
