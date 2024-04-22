@@ -13,7 +13,7 @@ const defaultMeta = {
   robots: "follow, index",
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
-  image: "/favicon/logo-2.png",
+  image: "/favicon.png",
   author: "Daniela Martinez",
 };
 
@@ -78,10 +78,12 @@ const SeoHead = (props) => {
         </>
       )}
       {/* Favicons */}
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png" />
 
       {/* Windows 8 app icon */}
       <meta name="msapplication-TileColor" content="#4b7263" />
-      <meta name="msapplication-TileImage" content="/favicon/logo-2.png" />
+      <meta name="msapplication-TileImage" content="/favicon.png" />
       {/* Accent color on supported browser */}
       <meta name="theme-color" content="#4b7263" />
     </Head>
