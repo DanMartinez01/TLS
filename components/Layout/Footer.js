@@ -22,9 +22,6 @@ const Footer = () => {
             <strong className="font-medium">
               <a href="/">TransLingual Solutions</a>
             </strong>
-            {/* is a
-            private virtual network that has unique features and has high
-            security. */}
           </p>
           <div className="flex w-full mt-2 mb-8 -mx-2">
             <div className="mx-2 bg-white-500 rounded-full items-center justify-center flex p-2 shadow-md">
@@ -69,7 +66,6 @@ const Footer = () => {
           src={t("icon")}
           width={48}
           height={48}
-          // className="mt-auto ml-2"
           className="mt-auto ml-2 w-72 h- md:w-36 md:h-36 lg:w-48 lg:h-48"
         />
       </div>
