@@ -9,7 +9,7 @@ export default async (req, res) => {
   try {
     const { data, error } = await resend.emails.send({
       from: "info@translingualsolutions.com",
-      to: { mail },
+      to: mail,
       subject: "TLS-New Request",
       html: `<div style="font-family: Arial, sans-serif; color: #333;">
       <p><strong>From:</strong> ${name}</p>
