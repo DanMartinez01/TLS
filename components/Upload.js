@@ -169,8 +169,8 @@ const Upload = () => {
             required
           >
             <option value="">Select Language</option>
-            <option value="english">English</option>
-            <option value="spanish">Spanish</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
           </select>
           <label
             htmlFor="file-upload"
