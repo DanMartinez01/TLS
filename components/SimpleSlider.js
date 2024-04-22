@@ -38,7 +38,7 @@ const SimpleSlider = () => {
       <motion.button
         className="absolute  left-1/2  top-3/4  w-2/5  
         sm:w-40 sm:h-12  md:w-72 h-12 
-        md:h-16 max-w-3/4 mx-auto p-3 bg-green text-white-500 text-lg md:text-2xl rounded-3xl hover:bg-white hover:text-green "
+        md:h-16 max-w-3/4 mx-auto p-3 bg-green text-white-500 text-lg md:text-2xl rounded-lg hover:bg-white hover:text-green "
         initial={{ x: "-100%", y: "-50%" }}
         animate={{ x: "-50%", y: "-50%" }}
         transition={{ duration: 0.8 }}
