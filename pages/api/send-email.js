@@ -17,7 +17,7 @@ export default async (req, res) => {
       <p><strong>Translate to:</strong> <span style="font-weight: bold;">${language}</span></p>
       <p><strong>Contact:</strong> ${phone}</p>
       <p><strong>More details:</strong> ${moreDetails}</p>
-      <img src="/favicon.png" alt="TLS" style="width: 100px; height: auto; margin-top: 20px;">
+      <img src="https://www.translingualsolutions.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo-2.ec01f995.png&w=640&q=75" alt="TLS" style="width: 100px; height: auto; margin-top: 20px;">
     </div>`,
       replyTo: email,
     });
