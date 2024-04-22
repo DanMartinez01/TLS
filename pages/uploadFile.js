@@ -19,23 +19,6 @@ const uploadFile = () => {
         </a>
         <LanguageSelector />
       </div>
-      {/* <div className="relative w-full h-72 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url("/assets/book.jpg")` }}
-        ></div>
-        <div className="absolute inset-0 bg-green opacity-50"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <motion.h1
-            initial={{ x: -1000 }} // Initial position (off-screen to the left)
-            animate={{ x: 0 }} // Final position (appear from left)
-            transition={{ duration: 0.9 }} // Animation duration
-            className="text-white-300 text-5xl font-semibold text-center"
-          >
-            Get a free quote
-          </motion.h1>
-        </div>
-      </div> */}
       <Hero />
 
       <div className="w-full  mx-auto  pt-4 pb-36 justify-center bg-white">
