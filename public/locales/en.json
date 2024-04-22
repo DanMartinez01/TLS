@@ -122,7 +122,8 @@
     {"two":" “Translators shall strictly comply with the professional secrecy and shall strongly refuse to infringe their duty of confidentiality.  Translators shall only be exempted from such duty in the following cases: a) upon the express authorization of the client or the recipient of the translation; b) for their own defense in a Court of Conduct or in a Court of Justice; c) when so required by law”."},
     {"three":"Shall the client deems it necessary, we may enter into a non-disclosure agreement which ensures greater safety in the handling of the documents involved and which formally ensures our professional secrecy."}
   ],
-  "formMsg":"Please include any significant details, such as urgent delivery date or translation requiring legal validation at Sworn Translators’ Association of the City of Buenos Aires."
+  "formMsg":"Please include any significant details, such as urgent delivery date or translation requiring legal validation at Sworn Translators’ Association of the City of Buenos Aires.",
+  "formTitle":"Fill in the form"
 
 
 

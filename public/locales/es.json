@@ -26,7 +26,6 @@
   "contact":"Contacto",
     "services": "Servicios",
     "testimonies":"Testimonios",
-
     "aboutTitle":"Quiénes somos",
     "aboutUs": 
     [{"one":"Somos"},
@@ -117,8 +116,7 @@
         {"two":" “El traductor debe respetar rigurosamente el secreto profesional y negarse rotundamente a infringir su deber de confidencialidad. Solo quedará exceptuado de tal deber: a) cuando el cliente o destinatario de su traducción lo autorice expresamente; b) si se tratare de su propia defensa ante el Tribunal de Conducta o ante un tribunal de justicia; c) cuando la ley se lo exija”."},
         {"three":"En el caso de que el cliente lo considere necesario, se podrá suscribir un Acuerdo de Confidencialidad a los fines de garantizar mayor seguridad en el manejo de los documentos involucrados, sellando de esta manera nuestro secreto profesional."}
       ],
-      "formMsg":"Por favor incluir algún dato que consideres importante saber, cómo la urgencia de la entrega, o si la traducción debe ser legalizada ante el CTPCBA"
-  
-
+      "formMsg":"Por favor incluir algún dato que consideres importante saber, cómo la urgencia de la entrega, o si la traducción debe ser legalizada ante el CTPCBA",
+      "formTitle":"Completa el formulario"
   }
   
