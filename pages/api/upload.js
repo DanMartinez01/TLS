@@ -29,6 +29,7 @@ export default async function handler(req, res) {
         const result = await cloudinary.uploader.upload(filePath, {
           resource_type: "auto",
           folder: "pdf_uploads",
+          quality: "auto:good",
         });
         const downloadUrl = result.secure_url;
         res.status(200).json({ downloadUrl });
