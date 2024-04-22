@@ -5,6 +5,8 @@ import { useTranslation } from "react-i18next";
 const Upload = () => {
   const { t } = useTranslation();
 
+  const cloudname = process.env.CLOUD_NAME;
+
   const [pdfSrc, setPdfSrc] = useState();
   const [uploadData, setUploadData] = useState();
   const [fileName, setFileName] = useState("");
@@ -59,7 +61,7 @@ const Upload = () => {
     formData.append("upload_preset", "my-uploads");
 
     const data = await fetch(
-      "https://api.cloudinary.com/v1_1/dov1ivlbc/image/upload",
+      `https://api.cloudinary.com/v1_1/${cloudname}/image/upload`,
       {
         method: "POST",
         body: formData,
