@@ -151,7 +151,7 @@ const Upload = () => {
           />
           <label htmlFor="more_details" className="mb-1">
             More details (optional)
-            <span className="text-black">/Mas información* (opcional)</span>
+            <span className="text-black">/Mas información (opcional)</span>
           </label>
           <textarea
             name="more_details"
