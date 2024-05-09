@@ -27,21 +27,21 @@ const Feature = () => {
 
   return (
     <div
-      className="w-full h-2/4  sm:mb-14 py-12 px-6 sm:px-8 lg:px-16  bg-green"
+      className="w-full h-2/4  sm:mb-14 mt-20 py-24 px-6 sm:px-8 lg:px-16  bg-green"
       id="feature"
     >
       <div className="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-        <div className="flex flex-col w-full xl:w-3/4">
+        <div className="flex flex-col w-full ">
           <motion.h1
             initial={{ x: -1000 }} // Initial position (off-screen to the left)
             animate={{ x: 0 }} // Final position (appear from left)
             transition={{ duration: 0.9 }} // Animation duration
-            className="text-3xl lg:text-5xl font-medium leading-relaxed text-white-500 lg:mb-4"
+            className="text-3xl lg:text-5xl font-medium  text-white-500 mt-2 lg:mb-4"
           >
             {t("aboutTitle")}
           </motion.h1>
 
-          <p>
+          <p className="text-left">
             {t("aboutUs", { returnObjects: true }).map((item, index) => (
               <span class="inline-flex items-baseline">
                 <span className="text-white-500">{item.one}</span>
