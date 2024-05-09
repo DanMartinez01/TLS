@@ -57,7 +57,7 @@ const Feature = () => {
           </p>
           <ScrollAnimationWrapper>
             <motion.div
-              className="h-98 w-96 mx-auto mt-10   flex justify-center"
+              className="mx-auto mt-10  flex justify-center"
               variants={scrollAnimation}
             >
               <ButtonPrimary
