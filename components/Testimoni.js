@@ -50,7 +50,6 @@ const Testimoni = () => {
         ref={setSliderRef}
         className="flex items-stretch justify-items-stretch"
       >
-        {/* {Reviews.reviews.map((item, index) => ( */}
         {t("reviews", { returnObjects: true }).map((item, index) => (
           <div className="px-3 flex items-stretch" key={index}>
             <div className="h-auto border-2 border-gray-500 hover:border-green transition-all rounded-lg p-4 flex flex-col">
@@ -76,12 +75,11 @@ const Testimoni = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
-                  {/* <p className="text-sm">{item.text}</p> */}
+                {/* <div className="flex flex-none items-center ml-auto order-1 xl:order-2">
                   <span className="flex ml-4">
                     <Stars className="h-4 w-4" />
                   </span>
-                </div>
+                </div> */}
               </div>
               <p className="my-4 text-left">“{item.text}”.</p>
             </div>
@@ -89,7 +87,7 @@ const Testimoni = () => {
         ))}
       </Slider>
       <div className="flex w-full items-center justify-end">
-        <div className="flex flex-none justify-between w-auto mt-14">
+        <div className="flex flex-none justify-between w-auto mt-2">
           <div
             className="mx-4 flex items-center justify-center h-14 w-14 rounded-full bg-white border-green border hover:bg-green hover:text-white-500 transition-all text-green cursor-pointer"
             onClick={sliderRef?.slickPrev}
