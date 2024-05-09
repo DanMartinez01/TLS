@@ -2,8 +2,10 @@
 import React, { useState } from "react";
 import useCustomTranslation from "../utils/useCustomTranslation";
 import { IoIosArrowDown } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 function LanguageSelector() {
+  const { t } = useTranslation();
   const { changeLanguage } = useCustomTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
@@ -31,7 +33,7 @@ function LanguageSelector() {
             aria-haspopup="true"
             aria-expanded="true"
           >
-            <p className="mr-1">Language</p>
+            <p className="mr-1">{t("lang")}</p>
             {/* Toggle arrow */}
             <IoIosArrowDown />
           </button>
@@ -51,14 +53,14 @@ function LanguageSelector() {
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
                 role="menuitem"
               >
-                English
+                {t("eng")}
               </button>
               <button
                 onClick={() => handleChangeLanguage("es")}
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
                 role="menuitem"
               >
-                Spanish
+                {t("es")}
               </button>
             </div>
           </div>
