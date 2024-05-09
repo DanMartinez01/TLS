@@ -3,7 +3,7 @@
   "header": [
    
     {
-      "label": "Quienes Somos",
+      "label": "Quiénes Somos",
       "link": "feature",
       "icon": "FaInfoCircle"
     },
@@ -53,27 +53,18 @@
       "Medicina y Biociencias",
       "Publicidad"
     ],
-    "disclaimer":"La firma de nuestros Traductores Públicos se encuentran debidamente registradas ante el Colegio de Traductores Públicos de la Ciudad de Buenos Aires para certificar los documentos de manera digital. Esto les brinda a nuestros clientes la posibilidad de trabajar con nosotros desde la comodidad de su hogar u oficina sin necesidad de trasladarse o de hacer trámites personalmente.",
+    "disclaimer":"Las firmas de nuestros Traductores Públicos se encuentran debidamente registradas ante el Colegio de Traductores Públicos de la Ciudad de Buenos Aires para certificar los documentos de manera digital. Esto les brinda a nuestros clientes la posibilidad de trabajar con nosotros desde la comodidad de su hogar u oficina sin necesidad de trasladarse o de hacer trámites personalmente.",
     "howToTitle":"¿Cómo solicitar una traducción?",
     "howTo":"¡Solicitar nuestros servicios es fácil! Todas las traducciones son enviadas en formato electrónico a nuestros clientes.",
-    "stepByStep": [
-      {
-        "icon": "RiUploadCloud2Fill",
-        "text": "Enviá tus archivos a traducir mediante el Formulario de Contacto."
-      },
-      {
-        "icon": "MdOutlinePriceChange",
-        "text": "TLS cotizará tu solicitud y la misma será enviada al correo que nos proporcionaste dentro de las 24hs."
-      },
-      {
-        "icon": "MdPayments",
-        "text": "Aceptá la propuesta y realizá tu pago mediante transferencia bancaria o Mercado Pago."
-      },
-      {
-        "icon": "RiFolderReceivedFill",
-        "text": "Recibí por correo electrónico el archivo digital con tu traducción lista."
-      }
-    ],
+  
+        "text1": "Enviá tus archivos a traducir mediante el Formulario de Contacto.",
+
+        "text2": "TLS cotizará tu solicitud y la misma será enviada al correo que nos proporcionaste dentro de las 24hs.",
+
+        "text3": "Aceptá la propuesta y realizá tu pago mediante transferencia bancaria o Mercado Pago.",
+   
+        "text4": "Recibí por correo electrónico el archivo digital con tu traducción lista.",
+
     "reviewsTitle":"Reseñas",
       "reviews": [
         {
@@ -92,7 +83,7 @@
           "text": "Impecable profesional y excelente persona. Un buen mix de talento, compromiso y calidad humana.",
           "name": "Gustavo Mallo",
           "jobPosition": "Country Manager",
-          "location": "Nielsen Argentina."
+          "location": "Nielsen, Argentina."
         },
         {
           "text": "Estefania siempre fue proactiva, curiosa e increíblemente pertinente cuando nos ayudaba a prepararnos para grandes eventos o pequeños proyectos que requerían trabajo de traducción. Es clara y directa, pero también amable y adaptable a los cambios. Sus habilidades lingüísticas no solo son de primera calidad desde un punto de vista técnico, sino también muy humanas, lo que ayuda mucho cuando se trata de unir equipos en un viaje hacia un objetivo común. ¡Sería mi primera opción para trabajos de traducción!",
@@ -117,6 +108,9 @@
         {"three":"En el caso de que el cliente lo considere necesario, se podrá suscribir un Acuerdo de Confidencialidad a los fines de garantizar mayor seguridad en el manejo de los documentos involucrados, sellando de esta manera nuestro secreto profesional."}
       ],
       "formMsg":"Por favor incluir algún dato que consideres importante saber, cómo la urgencia de la entrega, o si la traducción debe ser legalizada ante el CTPCBA",
-      "formTitle":"Completa el formulario"
+      "formTitle":"Completa el formulario",
+      "lang":"Idioma",
+      "es":"Español",
+      "eng":"Inglés"
   }
   
