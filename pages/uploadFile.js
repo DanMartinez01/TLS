@@ -1,9 +1,7 @@
-import { useState } from "react";
 import Hero from "../components/Hero";
 import Header from "../components/Layout/Header";
 import Footer from "../components/Layout/Footer";
 import Upload from "../components/Upload";
-import { motion } from "framer-motion";
 import { FaArrowLeft } from "react-icons/fa";
 import LanguageSelector from "../components/LanguageSelector";
 
@@ -20,7 +18,6 @@ const uploadFile = () => {
         <LanguageSelector />
       </div>
       <Hero />
-
       <div className="w-full  mx-auto  pt-4 pb-36 justify-center bg-white">
         <Upload />
       </div>
