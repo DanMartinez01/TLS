@@ -1,6 +1,5 @@
 import Feature from "../components/Feature";
-import Pricing from "../components/Pricing";
-import Hero from "../components/Hero";
+import Pricing from "../components/Pricing  pages/index.js/Pricing";
 import Services from "../components/Services";
 import Layout from "../components/Layout/Layout";
 import SeoHead from "../components/SeoHead";
