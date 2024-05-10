@@ -52,7 +52,7 @@ const Services = () => {
   return (
     <div
       id="services"
-      className="bg-cover bg-center h-full p-24"
+      className="bg-cover bg-center h-full p-16"
       // style={{ backgroundImage: "url('assets/white.jpg')" }}
     >
       <ScrollAnimationWrapper>
