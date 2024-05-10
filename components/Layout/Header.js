@@ -47,7 +47,7 @@ const Header = () => {
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
-        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-4">
+        <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-3">
           <div className="flex flex-row items-center">
             {/* <Image src="/assets/logo.png" width={100} height={60} /> */}
             <a
@@ -83,7 +83,7 @@ const Header = () => {
             <a
               className="inline-flex justify-center w-full rounded-md border border-gray-100 shadow-sm px-2 py-1
             md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2 mr-2
-            bg-green text-xs md:text-sm lg:text-sm xl:text-sm font-medium text-white-500 hover:bg-gray-50"
+            bg-green text-xs md:text-sm lg:text-sm xl:text-sm font-normal text-white-500 hover:bg-gray-50"
               href="/uploadFile"
             >
               {t("contact")}
