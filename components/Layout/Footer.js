@@ -58,7 +58,7 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="w-full flex flex-row items-center bg-green px-6 sm:px-8 lg:px-8 xl:px-12 py-4 pb-24 md:pb-20 lg:pb-14 xl:pb-12">
+      <div className="w-full flex flex-row items-center bg-green px-6 sm:px-8 lg:px-8 xl:px-12 py-4 pb-20 md:pb-18 lg:pb-12 xl:pb-10">
         <p className="mt-auto mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
           {t("certificate")}
         </p>
