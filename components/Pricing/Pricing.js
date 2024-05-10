@@ -121,8 +121,9 @@ const Pricing = () => {
               color="#4b7263"
             />
             <PricingCard
-              icon={<RiFolderReceivedFill size={30} color="#4b7263" />}
+              icon={<BsEnvelopeCheck size={28} color="white" />}
               text={t("text4")}
+              addClass="bg-green text-gray-100"
             />
           </div>
         </div>
