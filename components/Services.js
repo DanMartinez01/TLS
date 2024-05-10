@@ -64,9 +64,9 @@ const Services = () => {
         </motion.h3>
       </ScrollAnimationWrapper>
 
-      <div className="flex flex-col justify-center items-center md:flex-row lg:flex-row xl:flex-row pb-8">
+      <div className="flex flex-col justify-center  md:flex-row lg:flex-row xl:flex-row pb-8">
         {/* Services Card */}
-        <motion.div className="flex flex-col items-center mt-4  w-3/4">
+        <motion.div className="flex flex-col items-center mt-4 w-full md:w-3/4 lg:w-3/4 xl:w-3/4">
           <div className="my-4 space-y-3 border rounded-lg border-gray-100 border-1 pb-6 h-full w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
             <div
               className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full"
@@ -96,7 +96,7 @@ const Services = () => {
         </motion.div>
 
         {/* Industries Card */}
-        <motion.div className="flex flex-col items-center  mt-4  w-3/4">
+        <motion.div className="flex flex-col items-center  mt-4  w-full md:w-3/4 lg:w-3/4 xl:w-3/4">
           <div className="my-4 space-y-3 border rounded-lg border-gray-100 border-1 pb-6 h-full  w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
             <div
               className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full"
