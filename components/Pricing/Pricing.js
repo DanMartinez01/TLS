@@ -23,18 +23,18 @@ const Pricing = () => {
 
   return (
     <div className="bg-white-500 to-white-500 w-full py-10" id="pricing">
-      <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
+      <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto  flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-relaxed"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-500 leading-relaxed"
             >
               {t("howToTitle")}
             </motion.h3>
             <motion.p
               variants={scrollAnimation}
-              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto my-2 text-center"
+              className="leading-normal w-10/12 sm:w-7/12 lg:w-6/12 mx-auto mt-4 mb-16 text-center"
             >
               {t("howTo")}
             </motion.p>
@@ -99,7 +99,7 @@ const Pricing = () => {
             />
             <TbArrowBigDownLineFilled
               size={32}
-              style={{ marginTop: "4", marginBottom: "4" }}
+              style={{ marginTop: "8", marginBottom: "4" }}
               color="#4b7263"
             />
             <PricingCard
@@ -108,7 +108,7 @@ const Pricing = () => {
             />
             <TbArrowBigDownLineFilled
               size={32}
-              style={{ marginTop: "4", marginBottom: "4" }}
+              style={{ marginTop: "8", marginBottom: "4" }}
               color="#4b7263"
             />
             <PricingCard
@@ -117,7 +117,7 @@ const Pricing = () => {
             />
             <TbArrowBigDownLineFilled
               size={32}
-              style={{ marginTop: "4", marginBottom: "4" }}
+              style={{ marginTop: "8", marginBottom: "4" }}
               color="#4b7263"
             />
             <PricingCard
@@ -133,7 +133,7 @@ const Pricing = () => {
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
-              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-600 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
+              className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black-500 leading-normal w-9/12 sm: lg:w-4/12 mx-auto"
             >
               {t("reviewsTitle")}
             </motion.h3>
