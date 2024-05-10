@@ -44,7 +44,11 @@ module.exports = {
       grayTheme: "#eff4f2",
       blueLink: "#4455be",
     },
-    extend: {},
+    extend: {
+      margin: {
+        0: "0",
+      },
+    },
   },
   variants: {
     extend: {
