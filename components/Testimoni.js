@@ -48,7 +48,7 @@ const Testimoni = () => {
         {...settings}
         arrows={false}
         ref={setSliderRef}
-        className="flex items-stretch justify-items-stretch"
+        className="flex items-stretch justify-items-stretch pt-8"
       >
         {t("reviews", { returnObjects: true }).map((item, index) => (
           <div className="px-3 flex items-stretch" key={index}>
