@@ -23,7 +23,7 @@ const PricingCard = ({ icon, text, number, addClass }) => {
       setBoxShadowIndex(
         (prevIndex) => (prevIndex + 1) % boxShadowStyles.length
       );
-    }, 4000); // Change box shadow every 3 seconds
+    }, 1500); // Change box shadow every 3 seconds
 
     return () => clearInterval(interval);
   }, []); // Run effect only once on component mount
