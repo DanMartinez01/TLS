@@ -5,7 +5,12 @@ import { RiUploadCloud2Fill } from "react-icons/ri";
 import { MdOutlinePriceChange } from "react-icons/md";
 import { MdPayments } from "react-icons/md";
 import { RiFolderReceivedFill } from "react-icons/ri";
+import { BsEnvelopeCheck } from "react-icons/bs";
 import { FaArrowDown, FaArrowRight } from "react-icons/fa";
+import {
+  TbArrowBigRightLinesFilled,
+  TbArrowBigDownLineFilled,
+} from "react-icons/tb";
 
 import { motion } from "framer-motion";
 import getScrollAnimation from "../../utils/getScrollAnimation";
@@ -17,10 +22,7 @@ const Pricing = () => {
   const { t } = useTranslation();
 
   return (
-    <div
-      className="bg-gradient-to-b from-white-300 to-white-500 w-full py-10"
-      id="pricing"
-    >
+    <div className="bg-white-500 to-white-500 w-full py-10" id="pricing">
       <div className="max-w-screen-xl  px-6 sm:px-8 lg:px-16 mx-auto flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>
@@ -37,41 +39,66 @@ const Pricing = () => {
               {t("howTo")}
             </motion.p>
           </ScrollAnimationWrapper>
+
           {/* desktop */}
-          <div className="hidden sm:flex flex-col justify-between items-center">
-            <div className="flex flex-row items-center justify-around  mr-44 p-2">
-              <PricingCard
-                icon={<RiUploadCloud2Fill size={30} color="#4b7263" />}
-                text={t("text1")}
-              />
-              <FaArrowRight style={{ margin: "4" }} color="#4b7263" />
-              <div className="flex flex-col items-center">
+          <div className="hidden sm:flex flex-col justify-around items-center">
+            <div className="flex flex-row items-start justify-around  mr-56">
+              <div className="flex flex-row items-center px-2 ">
+                <PricingCard
+                  icon={<RiUploadCloud2Fill size={32} color="#4b7263" />}
+                  text={t("text1")}
+                  number={"1"}
+                  addClass={""}
+                />
+                <TbArrowBigRightLinesFilled
+                  size={32}
+                  style={{ marginLeft: "4", marginRight: "4" }}
+                  color="#4b7263"
+                />
+              </div>
+              <div className="flex flex-col items-center justify-center">
                 <PricingCard
                   icon={<MdOutlinePriceChange size={30} color="#4b7263" />}
                   text={t("text2")}
+                  number="2"
+                  addClass={""}
                 />
-                <FaArrowDown style={{ marginTop: "4" }} color="#4b7263" />
+                <TbArrowBigDownLineFilled
+                  size={32}
+                  style={{ marginTop: "4", marginBottom: "4" }}
+                  color="#4b7263"
+                />
               </div>
             </div>
-            <div className="flex flex-row items-center justify-around  ml-44 p-2">
+            <div className="flex flex-row items-center justify-around  ml-64">
               <PricingCard
-                icon={<MdPayments size={30} color="#4b7263" />}
+                icon={<MdPayments size={32} color="#4b7263" />}
                 text={t("text3")}
+                number="3"
+                addClass={""}
               />
-              <FaArrowRight style={{ margin: "4" }} color="#4b7263" />
+              <TbArrowBigRightLinesFilled
+                size={32}
+                style={{ marginLeft: "4", marginRight: "4" }}
+                color="#4b7263"
+              />
               <PricingCard
-                icon={<RiFolderReceivedFill size={30} color="#4b7263" />}
+                icon={<BsEnvelopeCheck size={28} color="white" />}
                 text={t("text4")}
+                number="4"
+                addClass="bg-green text-gray-100"
               />
             </div>
           </div>
+
           {/* mobile */}
-          <div className="flex flex-col md:hidden lg:hidden xl:hidden justify-between items-center mx-auto">
+          <div className="flex flex-col sm:hidden lg:hidden xl:hidden justify-between items-center mx-auto">
             <PricingCard
               icon={<RiUploadCloud2Fill size={30} color="#4b7263" />}
               text={t("text1")}
             />
-            <FaArrowDown
+            <TbArrowBigDownLineFilled
+              size={32}
               style={{ marginTop: "4", marginBottom: "4" }}
               color="#4b7263"
             />
@@ -79,7 +106,8 @@ const Pricing = () => {
               icon={<MdOutlinePriceChange size={30} color="#4b7263" />}
               text={t("text2")}
             />
-            <FaArrowDown
+            <TbArrowBigDownLineFilled
+              size={32}
               style={{ marginTop: "4", marginBottom: "4" }}
               color="#4b7263"
             />
@@ -87,7 +115,8 @@ const Pricing = () => {
               icon={<MdPayments size={30} color="#4b7263" />}
               text={t("text3")}
             />
-            <FaArrowDown
+            <TbArrowBigDownLineFilled
+              size={32}
               style={{ marginTop: "4", marginBottom: "4" }}
               color="#4b7263"
             />
@@ -99,7 +128,7 @@ const Pricing = () => {
         </div>
 
         {/* testimonies */}
-        <div className="flex flex-col w-full pt-24 mb-10" id="testimoni">
+        <div className="flex flex-col w-full pt-24" id="testimoni">
           <ScrollAnimationWrapper>
             <motion.h3
               variants={scrollAnimation}
@@ -108,17 +137,9 @@ const Pricing = () => {
               {t("reviewsTitle")}
             </motion.h3>
           </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="w-full flex flex-col py-12">
+          <ScrollAnimationWrapper className="w-full flex flex-col">
             <motion.div variants={scrollAnimation}>
               <Testimoni />
-            </motion.div>
-          </ScrollAnimationWrapper>
-          <ScrollAnimationWrapper className="relative w-full mt-16">
-            <motion.div variants={scrollAnimation} custom={{ duration: 3 }}>
-              <div
-                className="absolute bg-black-600 opacity-5 w-11/12 roudned-lg h-60 sm:h-56 top-0 mt-8 mx-auto left-0 right-0"
-                style={{ filter: "blur(114px)" }}
-              ></div>
             </motion.div>
           </ScrollAnimationWrapper>
         </div>

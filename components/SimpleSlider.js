@@ -50,15 +50,15 @@ const SimpleSlider = () => {
     <div className="w-full overflow-hidden mt-20  md:mt-10">
       <Slider {...settings}>
         <div className="w-full">
-          <Image src={"/assets/carousel1.png"} width={1900} height={720} />
+          <Image src={"/assets/carousel1.png"} width={2000} height={700} />
         </div>
         <div className="w-full">
-          <Image src={"/assets/carousel2.png"} width={1900} height={720} />
+          <Image src={"/assets/carousel2.png"} width={2000} height={700} />
         </div>
       </Slider>
       <ScrollAnimationWrapper>
         <motion.div
-          className="h-98 w-96 mx-auto  flex justify-center"
+          className="h-98 w-96 mx-auto flex justify-center mb-2"
           variants={scrollAnimation}
         >
           <ButtonPrimary
