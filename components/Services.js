@@ -25,56 +25,26 @@ const Services = () => {
     },
   };
 
-  // Define array of box shadow styles, including your custom shadow
-  const boxShadowStyles = [
-    "0 6px 12px rgba(75, 114, 99, 0.3)",
-    "0 0 24px rgba(75, 114, 99, 0.5)",
-  ];
-
-  // Use state to track current box shadow style index
-  const [boxShadowIndex, setBoxShadowIndex] = useState(0);
-
-  // Use effect to toggle box shadow periodically
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setBoxShadowIndex(
-        (prevIndex) => (prevIndex + 1) % boxShadowStyles.length
-      );
-    }, 1000); // Change box shadow every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []); // Run effect only once on component mount
-
-  // Define transition duration and easing
-  const transitionDuration = "0.3s";
-  const transitionTimingFunction = "ease-in-out";
-
   return (
     <div
       id="services"
-      className="bg-cover bg-center h-full p-16"
+      className="bg-cover bg-center h-ful"
       // style={{ backgroundImage: "url('assets/white.jpg')" }}
     >
       <ScrollAnimationWrapper>
         <motion.h3
-          className="text-center mb-12 text-2xl sm:text-3xl lg:text-4xl font-medium text-black-500 leading-relaxed"
+          className="w-full py-24 text-center mb-12 text-2xl sm:text-3xl lg:text-4xl font-medium text-white-500 leading-relaxed bg-green"
           variants={scrollAnimation}
         >
           {t("servtitle")}
         </motion.h3>
       </ScrollAnimationWrapper>
 
-      <div className="flex flex-col justify-center  md:flex-row lg:flex-row xl:flex-row pb-8">
+      <div className="md:-mt-32 lg:-mt-48 flex flex-col justify-center  md:flex-row lg:flex-row xl:flex-row px-16 md:p-2 lg:p-20 xl:px-40">
         {/* Services Card */}
-        <motion.div className="flex flex-col items-center mt-4 w-full md:w-3/4 lg:w-3/4 xl:w-3/4">
-          <div className="my-4 space-y-3 border rounded-lg border-gray-100 border-1 pb-6 h-full w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
-            <div
-              className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full"
-              style={{
-                boxShadow: boxShadowStyles[boxShadowIndex],
-                transition: `box-shadow ${transitionDuration} ${transitionTimingFunction}`,
-              }}
-            >
+        <motion.div className="flex flex-col items-center mt-4 w-full md:w-5/6 lg:w-3/4 xl:w-3/4">
+          <div className="my-4 border rounded-lg border-gray-100 border-1 pb-6 h-full w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
+            <div className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full">
               <CgUserList size={56} />
             </div>
             <h2 className="uppercase text-center font-semibold text-xl text-black-500">
@@ -97,14 +67,8 @@ const Services = () => {
 
         {/* Industries Card */}
         <motion.div className="flex flex-col items-center  mt-4  w-full md:w-3/4 lg:w-3/4 xl:w-3/4">
-          <div className="my-4 space-y-3 border rounded-lg border-gray-100 border-1 pb-6 h-full  w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
-            <div
-              className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full"
-              style={{
-                boxShadow: boxShadowStyles[boxShadowIndex],
-                transition: `box-shadow ${transitionDuration} ${transitionTimingFunction}`,
-              }}
-            >
+          <div className="my-4  border rounded-lg border-gray-100 border-1 pb-6 h-full  w-full md:w-3/4 bg-white-500 shadow-xl shadow-slate-700 hover:scale-105">
+            <div className="flex w-24 h-24 mx-auto mt-6 justify-center  items-center text-2xl text-center  text-white-500   bg-green rounded-full">
               <TbWorldCog size={56} />
             </div>
             <h2 className="mx-auto uppercase text-center  font-semibold text-xl text-black-500">

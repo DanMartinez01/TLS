@@ -27,39 +27,32 @@ const Feature = () => {
 
   return (
     <div
-      className="w-full h-2/4  sm:mb-14 mt-20 py-24 px-6 sm:px-8 lg:px-16  bg-green"
+      className="w-full h-2/4  sm:mb-14 mt-20 py-12 px-6 sm:px-8 lg:px-16  bg-green"
       id="feature"
     >
-      <div className="flex flex-col lg:flex-row xl:flex-row justify-center items-center">
-        <div className="flex flex-col w-full ">
-          <motion.h1
-            initial={{ x: -1000 }} // Initial position (off-screen to the left)
-            animate={{ x: 0 }} // Final position (appear from left)
-            transition={{ duration: 0.9 }} // Animation duration
-            className="text-3xl lg:text-5xl font-medium  text-white-500 mt-2 lg:mb-4"
-          >
-            {t("aboutTitle")}
-          </motion.h1>
+      <motion.h1
+        initial={{ x: -1000 }} // Initial position (off-screen to the left)
+        animate={{ x: 0 }} // Final position (appear from left)
+        transition={{ duration: 0.9 }} // Animation duration
+        className=" text-center text-2xl sm:text-3xl lg:text-4xl font-medium  text-white-500 leading-relaxed"
+      >
+        {t("aboutTitle")}
+      </motion.h1>
+      <div className="flex flex-col lg:flex-row xl:flex-row justify-center items-center mt-16">
+        <div className="flex flex-col w-full">
+          {t("aboutUs", { returnObjects: true }).map((item, index) => (
+            <div className="text-left">
+              <p className="text-white-500 text-sm">{item.one}</p>
+              <p className="text-white-500 font-bold text-lg">{item.two}</p>
+              <p className="text-white-500 text-sm">{item.three}</p>
+              <p className="text-white-500 text-sm">{item.four}</p>
+              <p className="text-white-500 font-bold text-lg">{item.five}</p>
+              <p className="text-white-500 text-sm">{item.six}</p>
+            </div>
+          ))}
 
-          <p className="text-left">
-            {t("aboutUs", { returnObjects: true }).map((item, index) => (
-              <span class="inline-flex items-baseline">
-                <span className="text-white-500">{item.one}</span>
-                <span className="text-white-500 font-bold -pr-1">
-                  {item.two}
-                </span>
-                <span className="text-white-500">{item.three}</span>
-                <span className="text-white-500">{item.four}</span>
-                <span className="text-white-500 font-bold">{item.five}</span>
-                <span className="text-white-500">{item.six}</span>
-              </span>
-            ))}
-          </p>
           <ScrollAnimationWrapper>
-            <motion.div
-              className="mx-auto mt-10  flex justify-center"
-              variants={scrollAnimation}
-            >
+            <motion.div className="mx-auto mt-10" variants={scrollAnimation}>
               <ButtonPrimary
                 addClass="bg-grayTheme text-green"
                 children={t("contact")}
@@ -68,17 +61,42 @@ const Feature = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-        <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end">
-          <motion.div className="h-98 w-96" variants={scrollAnimation}>
+        {/* <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end ">
+          <motion.div
+            className="h-98 w-96 bg-gray-500  rounded-full p-4 relative"
+            variants={scrollAnimation}
+          >
             <Image
               src="/assets/logo-2.png"
               alt="Translingual Solutions"
               layout="responsive"
               quality={100}
-              height={150}
-              width={150}
+              height={120}
+              width={120}
               className="rounded-full"
             />
+          </motion.div>
+        </ScrollAnimationWrapper> */}
+        <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end ">
+          <motion.div
+            className="h-98 w-96 bg-gray-500 rounded-full p-4 relative  z-10"
+            variants={scrollAnimation}
+          >
+            <div className="">
+              <Image
+                src="/assets/logo-2.png"
+                alt="Translingual Solutions"
+                layout="responsive"
+                quality={100}
+                height={120}
+                width={120}
+                className="rounded-full z-20"
+                style={{
+                  marginBottom: "-8px",
+                  marginLeft: "-8px",
+                }}
+              />
+            </div>
           </motion.div>
         </ScrollAnimationWrapper>
       </div>

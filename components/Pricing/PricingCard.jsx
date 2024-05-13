@@ -37,7 +37,7 @@ const PricingCard = ({ icon, text, number, addClass }) => {
       <motion.div
         variants={scrollAnimation}
         className={
-          "flex flex-col justify-center items-center rounded-full overflow-hidden border-2 border-gray-100 shadow-xl hover:scale-60 w-64 h-64 relative bg-white-300 " +
+          "flex flex-col justify-center items-center rounded-lg overflow-hidden border-2 border-gray-100 shadow-xl hover:scale-60 w-64 h-64 relative bg-white-500 " +
           addClass
         }
         whileHover={{
@@ -49,13 +49,16 @@ const PricingCard = ({ icon, text, number, addClass }) => {
         style={{
           width: "190px",
           height: "190px",
-          borderRadius: "50%",
+          // borderRadius: "50%",
           boxShadow: boxShadowStyles[boxShadowIndex],
           transition: `box-shadow ${transitionDuration} ${transitionTimingFunction}`,
         }}
       >
         <div className="px-4 w-48 h-48 overflow-hidden flex flex-col justify-center items-center">
-          {icon}
+          <div className="w-12 h-12 flex justify-center items-center rounded-full p-1 bg-green">
+            {icon}
+          </div>
+
           <p
             className={
               " flex flex-row  items-center text-center font-bold text-green text-2xl  " +

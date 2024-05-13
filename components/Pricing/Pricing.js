@@ -45,7 +45,7 @@ const Pricing = () => {
             <div className="flex flex-row items-start justify-around  mr-56">
               <div className="flex flex-row items-center px-2 ">
                 <PricingCard
-                  icon={<RiUploadCloud2Fill size={32} color="#4b7263" />}
+                  icon={<RiUploadCloud2Fill size={32} color="white" />}
                   text={t("text1")}
                   number={"1"}
                   addClass={""}
@@ -58,7 +58,7 @@ const Pricing = () => {
               </div>
               <div className="flex flex-col items-center justify-center">
                 <PricingCard
-                  icon={<MdOutlinePriceChange size={30} color="#4b7263" />}
+                  icon={<MdOutlinePriceChange size={30} color="white" />}
                   text={t("text2")}
                   number="2"
                   addClass={""}
@@ -72,7 +72,7 @@ const Pricing = () => {
             </div>
             <div className="flex flex-row items-center justify-around  ml-64">
               <PricingCard
-                icon={<MdPayments size={32} color="#4b7263" />}
+                icon={<MdPayments size={32} color="white" />}
                 text={t("text3")}
                 number="3"
                 addClass={""}
@@ -86,7 +86,7 @@ const Pricing = () => {
                 icon={<BsEnvelopeCheck size={28} color="white" />}
                 text={t("text4")}
                 number="4"
-                addClass="bg-green text-gray-100"
+                addClass=""
               />
             </div>
           </div>
@@ -94,7 +94,7 @@ const Pricing = () => {
           {/* mobile */}
           <div className="flex flex-col sm:hidden lg:hidden xl:hidden justify-between items-center mx-auto">
             <PricingCard
-              icon={<RiUploadCloud2Fill size={30} color="#4b7263" />}
+              icon={<RiUploadCloud2Fill size={30} color="white" />}
               text={t("text1")}
             />
             <TbArrowBigDownLineFilled
@@ -103,7 +103,7 @@ const Pricing = () => {
               color="#4b7263"
             />
             <PricingCard
-              icon={<MdOutlinePriceChange size={30} color="#4b7263" />}
+              icon={<MdOutlinePriceChange size={30} color="white" />}
               text={t("text2")}
             />
             <TbArrowBigDownLineFilled
@@ -112,7 +112,7 @@ const Pricing = () => {
               color="#4b7263"
             />
             <PricingCard
-              icon={<MdPayments size={30} color="#4b7263" />}
+              icon={<MdPayments size={30} color="white" />}
               text={t("text3")}
             />
             <TbArrowBigDownLineFilled
@@ -123,7 +123,7 @@ const Pricing = () => {
             <PricingCard
               icon={<BsEnvelopeCheck size={28} color="white" />}
               text={t("text4")}
-              addClass="bg-green text-gray-100"
+              addClass=""
             />
           </div>
         </div>
