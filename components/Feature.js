@@ -46,7 +46,7 @@ const Feature = () => {
               <p className="text-white-500 font-bold text-lg">{item.two}</p>
               <p className="text-white-500 text-sm">{item.three}</p>
               <p className="text-white-500 text-sm">{item.four}</p>
-              <p className="text-white-500 font-bold text-lg">{item.five}</p>
+              <p className="text-white-500 font-bold text-sm">{item.five}</p>
               <p className="text-white-500 text-sm">{item.six}</p>
             </div>
           ))}

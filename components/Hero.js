@@ -10,14 +10,14 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-screen-xl  px-8 xl:px-16 mx-auto" id="about">
+    <div className="w-full flex justify-center  mx-auto  px-24" id="about">
       <ScrollAnimationWrapper>
         <motion.div
-          className="flex flex-col items-center md:flex-row lg:flex-row xl:flex-row py-2 sm:py-16"
+          className="flex flex-col-reverse items-center  justify-center md:flex-col-reverse lg:flex-col-reverse xl:flex-row py-2 sm:py-16"
           variants={scrollAnimation}
         >
-          <div className="flex flex-col items-center row-start-2 sm:row-start-1 mx-auto">
-            <h1 className="text-3xl lg:text-4xl xl:text-5xl font-medium text-black-600 leading-relaxed text-center">
+          <div className="flex flex-col items-center row-start-2 sm:row-start-1">
+            <h1 className="text-4xl font-medium text-black-500 leading-relaxed text-center">
               {t("formTitle")}
             </h1>
           </div>

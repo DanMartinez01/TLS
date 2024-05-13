@@ -4,9 +4,7 @@ import PricingCard from "./PricingCard";
 import { RiUploadCloud2Fill } from "react-icons/ri";
 import { MdOutlinePriceChange } from "react-icons/md";
 import { MdPayments } from "react-icons/md";
-import { RiFolderReceivedFill } from "react-icons/ri";
 import { BsEnvelopeCheck } from "react-icons/bs";
-import { FaArrowDown, FaArrowRight } from "react-icons/fa";
 import {
   TbArrowBigRightLinesFilled,
   TbArrowBigDownLineFilled,

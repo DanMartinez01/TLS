@@ -1,11 +1,24 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/logo-2.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { MdLocationPin, MdContactMail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const renderIcon = (iconName) => {
+    switch (iconName) {
+      case "MdLocationPin":
+        return <MdLocationPin size={20} color="black" />;
+      case "MdContactMail":
+        return <MdContactMail size={24} color="#486f60" />;
+      default:
+        return null;
+    }
+  };
+
   const { t } = useTranslation();
   return (
     <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 mt-0">
@@ -37,25 +50,36 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col mb-2">
-          {t("footer", { returnObjects: true }).map((item, index) => (
-            <ul className="text-black-500 ">
-              <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
-                {item.title}
-              </li>
-              <li className="my-2 hover:text-green cursor-pointer transition-all">
-                {item.argAddress}
-              </li>
-              <li className="my-2 hover:text-green cursor-pointer transition-all">
-                {item.usAddress}
-              </li>
-              <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
-                {item.email}
-              </li>
-              <li className="my-2 hover:text-green cursor-pointer transition-all">
-                <a href="/privacy"> {item.privacy}</a>
-              </li>
-            </ul>
-          ))}
+          <ul className="text-black-500 ">
+            <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
+              {t("footerTitle")}
+            </li>
+            <li className="flex flex-row items-center text-black-600 my-2">
+              <MdLocationPin />
+              <a
+                className="text-black-600 ml-1"
+                href="https://maps.app.goo.gl/pNvtnV7RM73sSgLE7"
+              >
+                {t("argAddress")}
+              </a>
+            </li>
+            <li className="flex flex-row items-center text-black-600 my-2">
+              <MdLocationPin />
+              <a
+                className="text-black-600 ml-1"
+                href="https://maps.app.goo.gl/cmvZFPGmaeDrYcn29"
+              >
+                {t("usAddress")}
+              </a>
+            </li>
+
+            <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
+              <a href={`mailto:Info@translingualsolutions.com`}>{t("email")}</a>
+            </li>
+            <li className="my-2 hover:text-green cursor-pointer transition-all">
+              <a href="/privacy"> {t("footerPrivacy")}</a>
+            </li>
+          </ul>
         </div>
       </div>
       <div className="w-full flex flex-row items-center bg-green px-6 sm:px-8 lg:px-8 xl:px-12 py-4 pb-20 md:pb-18 lg:pb-12 xl:pb-10">

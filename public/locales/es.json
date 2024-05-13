@@ -91,13 +91,16 @@
           "jobPosition": "Líder Internacional de Asuntos Corporativos, BMS Worldwide Markets"
         }
       ],
-      "footer":[
-        {"title":"Nuestras Oficinas"},
-        {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
-        {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
-        {"email":"Info@translingualsolutions.com"},
-        {"privacy":"Política de Privacidad"}
-      ],
+     
+      "footerTitle":"Nuestras Oficinas",
+      "argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina",
+      "argLink":"https://maps.app.goo.gl/pNvtnV7RM73sSgLE7",
+      "usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA",
+      "usLink":"",
+      "locationIcon":"MdLocationPin",
+      "email":"Info@translingualsolutions.com",
+      "footerPrivacy":"Política de Privacidad",
+     
       "certificate":"Antonina Estefanía Carbone | TRADUCTORA PÚBLICA | Matrícula 6163 |Tomo XVII - Folio 14",
        "icon":"/assets/ctpba.png",
       "privacy":[

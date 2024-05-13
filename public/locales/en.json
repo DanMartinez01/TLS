@@ -95,14 +95,17 @@
       "location": "BMS Worldwide Markets"
     }
   ],
-  "footer":[
-    {"title":"Our offices"},
-    {"argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina"},
-    {"usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA"},
-    {"email":"Info@translingualsolutions.com"},
-    {"privacy":"Privacy Policy"}
-  ],
-  "certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR| Member 6163 |Registration XVII - P° 14",
+  
+    "footerTitle":"Our offices",
+    "argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina",
+    "argLink":"https://maps.app.goo.gl/pNvtnV7RM73sSgLE7",
+    "locationIcon":"MdLocationPin",
+    "usAddress":"2210 NW 92nd Avenue, Doral, FL 33172, Miami, USA",
+    "email":"Info@translingualsolutions.com",
+    "footerPrivacy":"Privacy Policy",
+
+  "certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR | Member 6163 | Volume XVII - Page 14"
+,
 "icon":"/assets/ctpba.png",
 
   "privacy":[
