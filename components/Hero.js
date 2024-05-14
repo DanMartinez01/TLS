@@ -10,19 +10,16 @@ const Hero = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full flex justify-center  mx-auto  px-24" id="about">
+    <div className="" id="about">
       <ScrollAnimationWrapper>
-        <motion.div
-          className="flex flex-col-reverse items-center  justify-center md:flex-col-reverse lg:flex-col-reverse xl:flex-row py-2 sm:py-16"
-          variants={scrollAnimation}
-        >
-          <div className="flex flex-col items-center row-start-2 sm:row-start-1">
-            <h1 className="text-4xl font-medium text-green md:text-black-500 lg:text-black-500 xl:text-black-500 leading-relaxed text-center">
+        <motion.div className="flex flex-col items-center  justify-center  py-2 sm:py-16">
+          <div className="flex flex-col items-center">
+            <h1 className="text-3xl md:text-4xl lg:text:-4xl font-medium text-green md:text-black-500 lg:text-black-500 xl:text-black-500 text-center">
               {t("formTitle")}
             </h1>
           </div>
-          <div className="flex w-2/4 hidden sm:block">
-            <motion.div className="h-full  w-full" variants={scrollAnimation}>
+          <div className="hidden sm:block">
+            <motion.div className="h-full  w-full">
               <Image
                 src="/assets/pc.jpg"
                 alt="Get a quote"

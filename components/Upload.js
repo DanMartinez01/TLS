@@ -319,7 +319,7 @@ const Upload = () => {
         method="post"
         onChange={handleOnChange}
         onSubmit={handleOnSubmit}
-        className="w-full p-4 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center mx-auto"
+        className="w-full p-4 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
       >
         <div className="my-6 text-black-600 flex flex-col items-start">
           <input

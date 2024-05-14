@@ -17,8 +17,8 @@ const uploadFile = () => {
         </a>
         <LanguageSelector />
       </div>
-      <Hero />
-      <div className="w-full  mx-auto  pt-4 pb-36 justify-center bg-white">
+      <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row justify-around px-8 md:px-2 lg:px-6 xl:px-16 my-10 mx-auto">
+        <Hero />
         <Upload />
       </div>
       <Footer />
