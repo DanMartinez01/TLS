@@ -27,7 +27,7 @@ const Feature = () => {
 
   return (
     <div
-      className="w-full h-2/4  sm:mb-14 mt-20 py-12 px-6 sm:px-8 lg:px-16  bg-green"
+      className="w-full h-2/4  sm:mb-14 mt-20 py-20 px-6 sm:px-8 lg:px-16  bg-green"
       id="feature"
     >
       <motion.h1

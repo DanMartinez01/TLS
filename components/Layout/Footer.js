@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Logo from "../../public/assets/logo-2.png";
+import Logo from "../../public/assets/logo2.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdLocationPin, MdContactMail } from "react-icons/md";
@@ -18,10 +18,10 @@ const Footer = () => {
             src={Logo}
             className="h-4 w-auto mb-6"
             width={200}
-            height={180}
+            height={100}
           />
           <p className="mb-4">
-            <strong className="font-medium">
+            <strong className="font-medium text-green">
               <a href="/">TransLingual Solutions</a>
             </strong>
           </p>
@@ -71,15 +71,20 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full flex flex-row items-center bg-green px-6 sm:px-8 lg:px-8 xl:px-12 py-4 pb-20 md:pb-18 lg:pb-12 xl:pb-10">
-        <p className="mt-auto mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
+      <div
+        className="w-full flex flex-row items-center bg-green 
+      px-4
+      pt-4 pb-4 mb-16 md:mb-16 lg:mb-0 xl:mb-0"
+      >
+        <div className="rounded-full bg-grayTheme p-8 py-auto mr-2"></div>
+        <p className="mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
           {t("certificate")}
         </p>
         <Image
           src={t("icon")}
           width={48}
           height={48}
-          className="mt-auto ml-2 w-72 h- md:w-36 md:h-36 lg:w-48 lg:h-48"
+          className="ml-2 w-72 h- md:w-36 md:h-36 lg:w-48 lg:h-48"
         />
       </div>
     </div>

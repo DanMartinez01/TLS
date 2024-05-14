@@ -53,7 +53,7 @@ const Header = () => {
             <a href="/">
               <Image
                 src="/assets/logo2.png"
-                width={120}
+                width={110}
                 height={35}
                 responsive
               />
