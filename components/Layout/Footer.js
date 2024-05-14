@@ -8,17 +8,6 @@ import { MdLocationPin, MdContactMail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
 
 const Footer = () => {
-  const renderIcon = (iconName) => {
-    switch (iconName) {
-      case "MdLocationPin":
-        return <MdLocationPin size={20} color="black" />;
-      case "MdContactMail":
-        return <MdContactMail size={24} color="#486f60" />;
-      default:
-        return null;
-    }
-  };
-
   const { t } = useTranslation();
   return (
     <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 mt-0">
@@ -54,8 +43,8 @@ const Footer = () => {
             <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
               {t("footerTitle")}
             </li>
-            <li className="flex flex-row items-center text-black-600 my-2">
-              <MdLocationPin />
+            <li className="flex flex-row items-end text-black-600 my-2">
+              <MdLocationPin size={24} />
               <a
                 className="text-black-600 ml-1"
                 href="https://maps.app.goo.gl/pNvtnV7RM73sSgLE7"
@@ -63,8 +52,8 @@ const Footer = () => {
                 {t("argAddress")}
               </a>
             </li>
-            <li className="flex flex-row items-center text-black-600 my-2">
-              <MdLocationPin />
+            <li className="flex flex-row items-start text-black-600 my-2">
+              <MdLocationPin size={24} />
               <a
                 className="text-black-600 ml-1"
                 href="https://maps.app.goo.gl/cmvZFPGmaeDrYcn29"
