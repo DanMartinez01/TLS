@@ -20,10 +20,7 @@ const Pricing = () => {
   const { t } = useTranslation();
 
   return (
-    <div
-      className=" w-full py-20 bg-[url('/assets/white2.jpg')] bg-opacity-50"
-      id="pricing"
-    >
+    <div className=" w-full py-20 bg-grayBg bg-opacity-50" id="pricing">
       <div className="max-w-screen-xl px-6 sm:px-8 lg:px-16 mx-auto  flex flex-col w-full text-center justify-center">
         <div className="flex flex-col w-full">
           <ScrollAnimationWrapper>

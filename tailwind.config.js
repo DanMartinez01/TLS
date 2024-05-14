@@ -48,6 +48,9 @@ module.exports = {
       margin: {
         0: "0",
       },
+      backgroundImage: {
+        grayBg: "url('/assets/white2.jpg')",
+      },
     },
   },
   variants: {
