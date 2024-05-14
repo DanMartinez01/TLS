@@ -26,7 +26,7 @@ function LanguageSelector() {
           <button
             type="button"
             onClick={toggleDropdown}
-            className=" bg-white-500 inline-flex justify-center items-center  w-full rounded-md border border-gray-100 shadow-sm px-1 py-1
+            className=" bg-grayTheme inline-flex justify-center items-center  w-full rounded-md border border-gray-400 shadow-sm px-1 py-1
             md:px-4 md:py-2 lg:px-4 lg:py-2 xl:px-4 xl:py-2
             text-xs md:text-sm lg:text-sm xl:text-sm font-normal text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             id="options-menu"
@@ -42,7 +42,7 @@ function LanguageSelector() {
         {/* Dropdown menu */}
         {isOpen && (
           <div
-            className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white-500 ring-1 ring-black ring-opacity-5 z-10"
+            className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-grayTheme ring-1 ring-black ring-opacity-5 z-10"
             role="menu"
             aria-orientation="vertical"
             aria-labelledby="options-menu"
@@ -50,14 +50,14 @@ function LanguageSelector() {
             <div className="py-1" role="none">
               <button
                 onClick={() => handleChangeLanguage("en")}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                className="block px-4 py-2 text-sm  font-normal text-black-500 hover:bg-gray-100 w-full text-left"
                 role="menuitem"
               >
                 {t("eng")}
               </button>
               <button
                 onClick={() => handleChangeLanguage("es")}
-                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 w-full text-left"
+                className="block px-4 py-2 text-sm font-normal text-black-500 hover:bg-gray-100 w-full text-left"
                 role="menuitem"
               >
                 {t("es")}

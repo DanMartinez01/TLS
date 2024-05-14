@@ -51,11 +51,43 @@ const Testimoni = () => {
         className="flex items-stretch justify-items-stretch pt-8"
       >
         {t("reviews", { returnObjects: true }).map((item, index) => (
+          // <div className="px-3 flex items-stretch" key={index}>
+          //   <div className="h-auto border-2 border-gray-500 hover:border-green transition-all rounded-lg px-4 py-2 flex flex-col">
+          //     <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
+          //       <div className="flex order-2 xl:order-1">
+          //         <div className="mr-4 bg-green flex items-center justify-center w-12 h-12 rounded-full">
+          //           <svg
+          //             xmlns="http://www.w3.org/2000/svg"
+          //             className="h-6 w-6 text-white"
+          //             fill="none"
+          //             viewBox="0 0 24 24"
+          //             stroke="currentColor"
+          //           >
+          //             <FaUser size={24} color="white" />
+          //           </svg>
+          //         </div>
+          //         <div className="flex flex-col ml-6 text-left">
+          //           <p className="text-lg text-black-600 capitalize">
+          //             {item.name}
+          //           </p>
+          //           <p className="text-xs text-black-600 capitalize">
+          //             {item.jobPosition}
+          //           </p>
+          //           <p className="text-sm text-black-500 capitalize">
+          //             {item.location}
+          //           </p>
+          //         </div>
+          //       </div>
+          //     </div>
+          //     <p className="my-4 text-left">“{item.text}”.</p>
+          //   </div>
+          // </div>
           <div className="px-3 flex items-stretch" key={index}>
             <div className="h-auto border-2 border-gray-500 hover:border-green transition-all rounded-lg px-4 py-2 flex flex-col">
               <div className="flex flex-col xl:flex-row w-full items-stretch xl:items-center">
-                <div className="flex order-2 xl:order-1">
-                  <div className="mr-4 bg-green flex items-center justify-center w-12 h-12 rounded-full">
+                <div className="w-full flex flex-row  items-center justify-around">
+                  <div className="bg-green flex items-center justify-center w-12 h-12 rounded-full">
+                    {/* Ensure consistent width and height for the user circle */}
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-6 w-6 text-white"
@@ -66,9 +98,12 @@ const Testimoni = () => {
                       <FaUser size={24} color="white" />
                     </svg>
                   </div>
-                  <div className="flex flex-col ml-5 text-left">
+                  <div className="w-3/4 flex flex-col text-left">
                     <p className="text-lg text-black-600 capitalize">
                       {item.name}
+                    </p>
+                    <p className="text-xs text-black-600 capitalize text-wrap">
+                      {item.jobPosition}
                     </p>
                     <p className="text-sm text-black-500 capitalize">
                       {item.location}

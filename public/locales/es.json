@@ -66,31 +66,33 @@
         "text4": "Recibí por correo electrónico el archivo digital con tu traducción lista.",
 
     "reviewsTitle":"Reseñas",
-      "reviews": [
-        {
-          "text": "Estefania es un placer trabajar con ella; conocedora e intuitiva con un toque creativo que es refrescante. Tiene la habilidad de pensar fuera de la caja y organizar equipos globales para coordinar y completar múltiples proyectos. Abarca una pasión por la comunicación, las traducciones y el branding con su personalidad extrovertida.",
-          "name": "Donna Moll",
-          "jobPosition": "Directora de Comunicaciones Internas, Diversidad, Equidad e Inclusión",
-          "location": "City of Hope, EE. UU."
-        },
-        {
-          "text": "Estefi es muy centrada en el cliente y encuentra el equilibrio adecuado para deleitar a sus clientes, mientras considera las necesidades de su organización y el equipo. Tiene una verdadera pasión por todo lo que hace.",
-          "name": "Kate Manton",
-          "jobPosition": "Líder de Personas, Operaciones, Gestión de Proyectos",
-          "location": "Ipsos, Inglaterra."
-        },
-        {
-          "text": "Impecable profesional y excelente persona. Un buen mix de talento, compromiso y calidad humana.",
-          "name": "Gustavo Mallo",
-          "jobPosition": "Country Manager",
-          "location": "Nielsen, Argentina."
-        },
-        {
-          "text": "Estefania siempre fue proactiva, curiosa e increíblemente pertinente cuando nos ayudaba a prepararnos para grandes eventos o pequeños proyectos que requerían trabajo de traducción. Es clara y directa, pero también amable y adaptable a los cambios. Sus habilidades lingüísticas no solo son de primera calidad desde un punto de vista técnico, sino también muy humanas, lo que ayuda mucho cuando se trata de unir equipos en un viaje hacia un objetivo común. ¡Sería mi primera opción para trabajos de traducción!",
-          "name": "Rute Marques",
-          "jobPosition": "Líder Internacional de Asuntos Corporativos, BMS Worldwide Markets"
-        }
-      ],
+    "reviews":
+    [
+      {
+        "text": "Estefania is a pleasure to work with; knowledgeable and intuitive with a creative flair that is refreshing. She has the ability to think out of the box and organize global teams to get multiple projects coordinated and completed. She embraces a passion for communication, translations and branding with her outgoing personality.",
+        "name": "Donna Moll",
+        "jobPosition": "Director of Internal Communications, Diversity, Equity and Inclusion",
+        "location": "City of Hope, USA."
+      },
+      {
+        "text": "Estefi is very client centric, and finds the right balance of delighting her clients, whilst considering the needs of her organization and the team. She has a real passion for everything that she does.",
+        "name": "Kate Manton",
+        "jobPosition": "People Leader, Operations, Project Mgmt",
+        "location": "Ipsos,England."
+      },
+      {
+        "text": "Impeccable professional and excellent person. A great mix of talent, commitment and human quality.",
+        "name": "Gustavo Mallo",
+        "jobPosition": "Country Manager",
+        "location": "Nielsen,Argentina."
+      },
+      {
+        "text": "Estefania was always proactive, curious, and incredibly pertinent when helping us prepare for large events or small projects that required translation work. She is clear, and straight to the point, but also kind and accommodating of changes. Her language skills are not only top-notch from a technical quality standpoint, but also very human, which helps a lot when bringing teams together on a journey for a common outcome. She'd be my first choice for translation work!",
+        "name": "Rute Marques",
+        "jobPosition": "International Corporate Affairs Leader",
+        "location": "BMS Worldwide Markets"
+      }
+    ],
      
       "footerTitle":"Nuestras Oficinas",
       "argAddress":"Roque Sáenz Peña 868, Piso 8, Oficina Q, CABA, Argentina",

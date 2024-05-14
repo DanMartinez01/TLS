@@ -61,11 +61,8 @@ const Feature = () => {
             </motion.div>
           </ScrollAnimationWrapper>
         </div>
-        {/* <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end ">
-          <motion.div
-            className="h-98 w-96 bg-gray-500  rounded-full p-4 relative"
-            variants={scrollAnimation}
-          >
+        <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end items-center">
+          <motion.div className="mt-16" variants={scrollAnimation}>
             <Image
               src="/assets/logo-2.png"
               alt="Translingual Solutions"
@@ -73,29 +70,47 @@ const Feature = () => {
               quality={100}
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full z-20"
             />
-          </motion.div>
-        </ScrollAnimationWrapper> */}
-        <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end ">
-          <motion.div
-            className="h-98 w-96 bg-gray-500 rounded-full p-4 relative  z-10"
-            variants={scrollAnimation}
-          >
-            <div className="">
-              <Image
-                src="/assets/logo-2.png"
-                alt="Translingual Solutions"
-                layout="responsive"
-                quality={100}
-                height={120}
-                width={120}
-                className="rounded-full z-20"
-                style={{
-                  marginBottom: "-8px",
-                  marginLeft: "-8px",
-                }}
-              />
+            <div class="relative h-48 w-72">
+              <div class="hidden sm:block h-48 w-30 text-gray-300  absolute z-0 -left-10 bottom-40">
+                <svg
+                  id="patternId"
+                  width="100%"
+                  height="100%"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <defs>
+                    <pattern
+                      id="b"
+                      patternUnits="userSpaceOnUse"
+                      width="28"
+                      height="28"
+                      patternTransform="scale(0.5) rotate(0)"
+                    >
+                      <rect
+                        x="0"
+                        y="0"
+                        width="100%"
+                        height="100%"
+                        fill="none"
+                      />
+                      <path
+                        d="M11 6a5 5 0 01-5 5 5 5 0 01-5-5 5 5 0 015-5 5 5 0 015 5"
+                        stroke-width="1"
+                        stroke="none"
+                        fill="gray"
+                      />
+                    </pattern>
+                  </defs>
+                  <rect
+                    width="800%"
+                    height="800%"
+                    transform="translate(0,0)"
+                    fill="url(#b)"
+                  />
+                </svg>
+              </div>
             </div>
           </motion.div>
         </ScrollAnimationWrapper>

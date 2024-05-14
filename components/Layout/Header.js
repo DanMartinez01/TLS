@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { logo2 } from "../../public/assets/logo2.png";
 import { Link as LinkScroll } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../LanguageSelector";
@@ -43,19 +44,27 @@ const Header = () => {
     <>
       <header
         className={
-          "fixed top-0 w-full  z-30 bg-white-500 transition-all " +
+          "fixed top-0 w-full  z-30 bg-grayTheme transition-all " +
           (scrollActive ? " shadow-md pt-0" : " pt-4")
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-3">
           <div className="flex flex-row items-center">
-            {/* <Image src="/assets/logo.png" width={100} height={60} /> */}
-            <a
+            <a href="/">
+              <Image
+                src="/assets/logo2.png"
+                width={120}
+                height={35}
+                responsive
+              />
+            </a>
+
+            {/* <a
               href="/"
               className="text-green text-bold textxl md:text-2xl lg:text-2xl xl:text-2xl"
             >
               Translingual solutions
-            </a>
+            </a> */}
           </div>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             {t("header", { returnObjects: true }).map((item, index) => (

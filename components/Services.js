@@ -31,9 +31,9 @@ const Services = () => {
       className="bg-cover bg-center h-ful"
       // style={{ backgroundImage: "url('assets/white.jpg')" }}
     >
-      <ScrollAnimationWrapper>
+      <ScrollAnimationWrapper className="w-full py-24 text-center mb-12 text-2xl sm:text-3xl lg:text-4xl font-medium text-white-500 leading-relaxed bg-green">
         <motion.h3
-          className="w-full py-24 text-center mb-12 text-2xl sm:text-3xl lg:text-4xl font-medium text-white-500 leading-relaxed bg-green"
+          className="text-center mb-12 text-2xl sm:text-3xl lg:text-4xl font-medium text-white-500 leading-relaxed "
           variants={scrollAnimation}
         >
           {t("servtitle")}

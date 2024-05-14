@@ -12,7 +12,7 @@ const uploadFile = () => {
         <a href="/" className="hover:text-green">
           <span className="w-full flex flex-row items-center text-xl my-auto ">
             <FaArrowLeft />
-            <p className="mx-4 hover:text-green"> Back to Home</p>
+            <p className="mx-4 hover:text-green">Home</p>
           </span>
         </a>
         <LanguageSelector />
