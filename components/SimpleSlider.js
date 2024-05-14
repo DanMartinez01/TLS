@@ -47,13 +47,25 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden mt-20  md:mt-10">
+    <div className="w-full overflow-hidden mt-20  md:mt-10 bg-[url('/assets/white2.jpg')]">
       <Slider {...settings}>
         <div className="w-full">
-          <Image src={"/assets/carousel1.png"} width={2000} height={700} />
+          <Image
+            src={"/assets/carousel1.png"}
+            width={2000}
+            height={700}
+            layout="responsive"
+            quality={100}
+          />
         </div>
         <div className="w-full">
-          <Image src={"/assets/carousel2.png"} width={2000} height={700} />
+          <Image
+            src={"/assets/carousel2.png"}
+            width={2000}
+            height={700}
+            layout="responsive"
+            quality={100}
+          />
         </div>
       </Slider>
       <ScrollAnimationWrapper>

@@ -319,9 +319,9 @@ const Upload = () => {
         method="post"
         onChange={handleOnChange}
         onSubmit={handleOnSubmit}
-        className="w-full p-4 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
+        className="w-full px-4 mb-24 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
       >
-        <div className="my-6 text-black-600 flex flex-col items-start">
+        <div className="my-4 text-black-500 text-sm flex flex-col items-start">
           <input
             type="file"
             name="file"
@@ -338,7 +338,7 @@ const Upload = () => {
             name="name"
             id="name"
             placeholder="Jane Doe"
-            className="w-full block border border-gray-400  py-3 px-2 rounded-md mb-2 text-black-500"
+            className="w-full block border border-gray-400  py-2 px-2 rounded-md mb-2 text-black-500"
             required
           />
           <label htmlFor="email" className="mb-1">
@@ -349,7 +349,7 @@ const Upload = () => {
             name="email"
             id="email"
             placeholder="youremail@example.com"
-            className="w-full block border border-gray-400 focus:border-1 focus:border-gray-100 py-3 px-2 rounded-md mb-2 text-black-500"
+            className="w-full block border border-gray-400 focus:border-1 focus:border-gray-100 py-2 px-2 rounded-md mb-2 text-black-500"
             required
           />
           <label htmlFor="phone" className="mb-1">
@@ -361,7 +361,7 @@ const Upload = () => {
               name="areaCode"
               id="areaCode"
               placeholder="Area Code"
-              className="w-1/4 block border border-gray-400 focus:border-2 focus:border-green-500 py-3 px-2 mr-2 rounded-md text-black-500"
+              className="w-1/4 block border border-gray-400 focus:border-2 focus:border-green-500 py-2 px-2 mr-2 rounded-md text-black-500"
               value={areaCode}
               onChange={(e) => setAreaCode(e.target.value)}
               required
@@ -371,7 +371,7 @@ const Upload = () => {
               name="phone"
               id="phone"
               placeholder="Phone Number"
-              className="w-3/4 block border border-gray-400 focus:border-2 focus:border-green-500 py-3 px-2 rounded-md text-black-500"
+              className="w-3/4 block border border-gray-400 focus:border-2 focus:border-green-500 py-2 px-2 rounded-md text-black-500"
               required
             />
           </div>
@@ -386,7 +386,7 @@ const Upload = () => {
             name="more_details"
             id="more_details"
             placeholder={t("formMsg")}
-            className="w-full text-xs block border border-gray-400 focus:border-2 focus:border-green-500 py-4 px-2 rounded-md mb-2 text-black-500"
+            className="w-full text-xs block border border-gray-400 focus:border-2 focus:border-green-500 py-3 px-2 rounded-md mb-2 text-black-500"
           ></textarea>
           <label htmlFor="language" className="mb-1">
             Translate to<span className="text-red-500"></span>/Traducir a*
@@ -394,7 +394,7 @@ const Upload = () => {
           <select
             name="language"
             id="language"
-            className="w-full block border border-gray-400  py-3 px-2 rounded-md mb-2 text-black-500"
+            className="w-full block border border-gray-400  py-2 px-2 rounded-md mb-2 text-black-500"
             required
           >
             <option value="">Select Language</option>
