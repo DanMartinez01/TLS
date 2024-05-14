@@ -43,7 +43,7 @@ const Footer = () => {
             <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
               {t("footerTitle")}
             </li>
-            <li className="flex flex-row items-end text-black-600 my-2">
+            <li className="flex flex-row items-start text-black-600 my-2">
               <MdLocationPin size={24} />
               <a
                 className="text-black-600 ml-1"

@@ -8,7 +8,7 @@ import LanguageSelector from "../components/LanguageSelector";
 const uploadFile = () => {
   return (
     <>
-      <div className="w-full h-24 flex justify-end items-center px-4">
+      <div className="w-full h-24 flex justify-end items-center px-4 mb-8">
         <a href="/" className="hover:text-green">
           <span className="w-full flex flex-row items-center text-xl my-auto ">
             <FaArrowLeft />
