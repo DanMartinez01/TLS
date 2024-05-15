@@ -12,7 +12,6 @@ const Footer = () => {
     <div className="bg-gray-100 pt-10 lg:pt-12 xl:pt-16 -mt-16">
       <div className="max-w-screen-xl w-full  px-6 sm:px-8 lg:px-8 xl:px-12">
         <div className="flex flex-col items-start">
-          {/* <Logo className="h-8 w-auto mb-6" /> */}
           <Image src={Logo} className="w-auto mb-6" width={180} height={80} />
           <p className="mb-4">
             <strong className="font-medium text-green">
@@ -65,7 +64,7 @@ const Footer = () => {
             </li>
 
             <li className="my-2 font-semibold hover:text-green cursor-pointer transition-all">
-              <a href={`mailto:Info@translingualsolutions.com`}>{t("email")}</a>
+              <a href={`mailto:info@translingualsolutions.com`}>{t("email")}</a>
             </li>
             <li className="my-2 hover:text-green cursor-pointer transition-all">
               <a href="/privacy"> {t("footerPrivacy")}</a>
@@ -73,12 +72,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div
-        className="w-full flex flex-row items-center bg-green 
-      px-4
-      pt-4 pb-4 mb-16 md:mb-16 lg:mb-0 xl:mb-0"
-      >
-        <div className="rounded-full bg-grayTheme p-8 py-auto mr-2"></div>
+      <div className="w-full flex flex-row items-center bg-green   px-6 sm:px-8 lg:px-8 xl:px-12 pt-4 pb-4 mb-16 md:mb-16 lg:mb-0 xl:mb-0">
+        <div className="rounded-full bg-grayTheme p-6 py-auto mr-2"></div>
         <p className="mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
           {t("certificate")}
         </p>

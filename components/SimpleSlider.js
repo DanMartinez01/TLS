@@ -51,7 +51,7 @@ const SimpleSlider = () => {
       <Slider {...settings}>
         <div className="w-full">
           <Image
-            src={"/assets/carousel1.png"}
+            src={"/assets/carousel3.png"}
             width={2000}
             height={700}
             layout="responsive"
@@ -60,7 +60,7 @@ const SimpleSlider = () => {
         </div>
         <div className="w-full">
           <Image
-            src={"/assets/carousel2.png"}
+            src={"/assets/carousel4.png"}
             width={2000}
             height={700}
             layout="responsive"

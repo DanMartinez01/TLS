@@ -62,15 +62,15 @@ const Feature = () => {
           </ScrollAnimationWrapper>
         </div>
         <ScrollAnimationWrapper className="hidden lg:flex lg:w-full lg:justify-end xl:flex xl:w-full xl:justify-end items-center">
-          <motion.div className="mt-16" variants={scrollAnimation}>
+          <motion.div className="" variants={scrollAnimation}>
             <Image
               src="/assets/logo-2.png"
               alt="Translingual Solutions"
               layout="responsive"
               quality={100}
-              height={120}
-              width={120}
-              className="rounded-full z-20"
+              height={130}
+              width={130}
+              className="rounded-full z-20 h-72 w-72"
             />
             <div class="relative h-48 w-72">
               <div class="hidden sm:block h-48 w-30 text-gray-300  absolute z-0 -left-10 bottom-40">
