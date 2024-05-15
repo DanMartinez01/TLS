@@ -51,14 +51,14 @@ const SimpleSlider = () => {
       <Slider {...settings}>
         <div className="w-full">
           <Image
-            src={"/assets/carousel3.png"}
-            width={2000}
-            height={700}
+            src={"/assets/carousel2.png"}
+            width={1400}
+            height={500}
             layout="responsive"
             quality={100}
           />
         </div>
-        <div className="w-full">
+        {/* <div className="w-full">
           <Image
             src={"/assets/carousel4.png"}
             width={2000}
@@ -66,7 +66,7 @@ const SimpleSlider = () => {
             layout="responsive"
             quality={100}
           />
-        </div>
+        </div> */}
       </Slider>
       <ScrollAnimationWrapper>
         <motion.div
