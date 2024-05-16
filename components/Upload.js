@@ -12,15 +12,17 @@ const Upload = () => {
   const [areaCode, setAreaCode] = useState("");
 
   function handleOnChange(changeEvent) {
+    const file = changeEvent.target.files[0];
+    if (!file) return;
+
     const reader = new FileReader();
+    const fileType = file.type;
 
     reader.onload = function (onLoadEvent) {
       setPdfSrc(onLoadEvent.target.result);
       setUploadData(undefined);
     };
 
-    // setFileName(changeEvent.target.files[0].name);
-    // reader.readAsDataURL(changeEvent.target.files[0]);
     setFileName(file.name);
     if (
       fileType === "application/pdf" ||
@@ -133,7 +135,6 @@ const Upload = () => {
     <>
       <form
         method="post"
-        onChange={handleOnChange}
         onSubmit={handleOnSubmit}
         className="w-full p-4  mb-24 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
       >
@@ -144,6 +145,7 @@ const Upload = () => {
             accept=".pdf,.doc,.docx,.jpeg,.jpg,.png"
             className="hidden"
             id="file-upload"
+            onChange={handleOnChange}
             required
           />
           <label htmlFor="name" className="mb-1">
@@ -225,7 +227,6 @@ const Upload = () => {
           </label>
           {fileName && (
             <span className="text-green font-bold-400 text-center mx-auto mt-2 ">
-              {" "}
               {fileName}
             </span>
           )}
@@ -235,7 +236,7 @@ const Upload = () => {
             type="submit"
             className="w-2/4 bg-green hover:bg-yellow-200 text-white-300 py-2 px-8 rounded-lg cursor-pointer inline-block my-10"
           >
-            Upload PDF
+            Upload File
           </button>
         )}
         {isSent && (
