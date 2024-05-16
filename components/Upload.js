@@ -22,11 +22,18 @@ const Upload = () => {
     // setFileName(changeEvent.target.files[0].name);
     // reader.readAsDataURL(changeEvent.target.files[0]);
     setFileName(file.name);
-    if (fileType === "application/pdf" || fileType.startsWith("image/")) {
+    if (
+      fileType === "application/pdf" ||
+      fileType === "application/msword" ||
+      fileType ===
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document" ||
+      fileType.startsWith("image/")
+    ) {
       reader.readAsDataURL(file);
     } else {
       setUploadData({
-        error: "Unsupported file type. Please upload a PDF or an image.",
+        error:
+          "Unsupported file type. Please upload a PDF, DOC, DOCX, or an image.",
       });
     }
   }
@@ -134,7 +141,7 @@ const Upload = () => {
           <input
             type="file"
             name="file"
-            accept=".pdf .png, .jpg, .jpeg, .txt, .doc, .docx"
+            accept=".pdf,.doc,.docx,.jpeg,.jpg,.png"
             className="hidden"
             id="file-upload"
             required
