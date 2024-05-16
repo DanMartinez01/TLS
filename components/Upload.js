@@ -19,35 +19,17 @@ const Upload = () => {
       setUploadData(undefined);
     };
 
-    setFileName(changeEvent.target.files[0].name);
-    reader.readAsDataURL(changeEvent.target.files[0]);
+    // setFileName(changeEvent.target.files[0].name);
+    // reader.readAsDataURL(changeEvent.target.files[0]);
+    setFileName(file.name);
+    if (fileType === "application/pdf" || fileType.startsWith("image/")) {
+      reader.readAsDataURL(file);
+    } else {
+      setUploadData({
+        error: "Unsupported file type. Please upload a PDF or an image.",
+      });
+    }
   }
-  // async function handleOnSubmit(event) {
-  //   event.preventDefault();
-  //   const form = event.currentTarget;
-
-  //   const formData = new FormData(form);
-  //   const name = formData.get("name");
-  //   const email = formData.get("email");
-  //   const phone = `${areaCode}-${formData.get("phone")}`;
-  //   const moreDetails = formData.get("more_details");
-  //   const language = formData.get("language");
-  //   console.log(phone);
-
-  //   const fileInput = form.elements["file"];
-  //   const file = fileInput.files[0];
-  //   const pdfUrl = await uploadPDF(file);
-
-  //   await sendEmail({ pdfUrl, name, email, phone, moreDetails, language });
-
-  //   setIsSent(true);
-
-  //   form.reset();
-  //   setPdfSrc(null);
-  //   setUploadData(null);
-  //   setFileName("");
-  //   setAreaCode("");
-  // }
 
   async function handleOnSubmit(event) {
     event.preventDefault();
@@ -152,7 +134,7 @@ const Upload = () => {
           <input
             type="file"
             name="file"
-            accept=".pdf"
+            accept=".pdf .png, .jpg, .jpeg, .txt, .doc, .docx"
             className="hidden"
             id="file-upload"
             required
@@ -265,13 +247,6 @@ const Upload = () => {
         {uploadData && uploadData.error && (
           <p className="text-black-500">{uploadData.error}</p>
         )}
-        {/* {uploadData && (
-          <div className="mt-4">
-            <code>
-              <pre>{JSON.stringify(uploadData, null, 2)}</pre>
-            </code>
-          </div>
-        )} */}
       </form>
     </>
   );
