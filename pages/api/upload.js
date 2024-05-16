@@ -64,13 +64,12 @@ export default async function handler(req, res) {
         return;
       }
 
-      // Check file size
-      const maxFileSize = 10 * 1024 * 1024; // 10 MB in bytes
-      const file = files.file;
-      if (file.size > maxFileSize) {
-        res.status(400).json({ error: "File size exceeds the limit (10MB)." });
-        return;
-      }
+      // const maxFileSize = 10 * 1024 * 1024;
+      // const file = files.file;
+      // if (file.size > maxFileSize) {
+      //   res.status(400).json({ error: "File size exceeds the limit (10MB)." });
+      //   return;
+      // }
 
       const filePath = file.path;
       try {
