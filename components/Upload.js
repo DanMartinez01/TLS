@@ -268,13 +268,13 @@ const Upload = () => {
         {uploadData && uploadData.error && (
           <p className="text-black-500">{uploadData.error}</p>
         )}
-        {uploadData && (
+        {/* {uploadData && (
           <div className="mt-4">
             <code>
               <pre>{JSON.stringify(uploadData, null, 2)}</pre>
             </code>
           </div>
-        )}
+        )} */}
       </form>
     </>
   );
