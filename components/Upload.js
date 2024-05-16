@@ -9,7 +9,7 @@ const Upload = () => {
   const [uploadData, setUploadData] = useState();
   const [fileName, setFileName] = useState("");
   const [isSent, setIsSent] = useState(false);
-  const [areaCode, setAreaCode] = useState(""); // Add state for area code
+  const [areaCode, setAreaCode] = useState("");
 
   function handleOnChange(changeEvent) {
     const reader = new FileReader();
@@ -19,10 +19,36 @@ const Upload = () => {
       setUploadData(undefined);
     };
 
-    // Set file name
     setFileName(changeEvent.target.files[0].name);
     reader.readAsDataURL(changeEvent.target.files[0]);
   }
+  // async function handleOnSubmit(event) {
+  //   event.preventDefault();
+  //   const form = event.currentTarget;
+
+  //   const formData = new FormData(form);
+  //   const name = formData.get("name");
+  //   const email = formData.get("email");
+  //   const phone = `${areaCode}-${formData.get("phone")}`;
+  //   const moreDetails = formData.get("more_details");
+  //   const language = formData.get("language");
+  //   console.log(phone);
+
+  //   const fileInput = form.elements["file"];
+  //   const file = fileInput.files[0];
+  //   const pdfUrl = await uploadPDF(file);
+
+  //   await sendEmail({ pdfUrl, name, email, phone, moreDetails, language });
+
+  //   setIsSent(true);
+
+  //   form.reset();
+  //   setPdfSrc(null);
+  //   setUploadData(null);
+  //   setFileName("");
+  //   setAreaCode("");
+  // }
+
   async function handleOnSubmit(event) {
     event.preventDefault();
     const form = event.currentTarget;
@@ -34,27 +60,39 @@ const Upload = () => {
     const phone = `${areaCode}-${formData.get("phone")}`; // Combine area code with phone number
     const moreDetails = formData.get("more_details");
     const language = formData.get("language");
-    console.log(phone);
+
     // Upload PDF
     const fileInput = form.elements["file"];
     const file = fileInput.files[0];
-    const pdfUrl = await uploadPDF(file);
 
-    // Send email with PDF URL and form data
-    await sendEmail({ pdfUrl, name, email, phone, moreDetails, language });
+    try {
+      // Check file size
+      const maxFileSize = 10 * 1024 * 1024; // 10 MB in bytes
+      if (file.size > maxFileSize) {
+        throw new Error("File size exceeds the limit (10MB).");
+      }
 
-    // Set "sent!" message state
-    setIsSent(true);
+      const pdfUrl = await uploadPDF(file);
 
-    // Reset the form
-    form.reset();
-    setPdfSrc(null);
-    setUploadData(null);
-    setFileName("");
-    setAreaCode(""); // Reset area code state
+      // Send email with PDF URL and form data
+      await sendEmail({ pdfUrl, name, email, phone, moreDetails, language });
+
+      // Set "sent!" message state
+      setIsSent(true);
+
+      // Reset the form
+      form.reset();
+      setPdfSrc(null);
+      setUploadData(null);
+      setFileName("");
+      setAreaCode(""); // Reset area code state
+    } catch (error) {
+      // Handle error
+      console.error("Error submitting form:", error);
+      setUploadData({ error: error.message }); // Set error message in state
+    }
   }
 
-  // Function to upload PDF
   async function uploadPDF(file) {
     const formData = new FormData();
     formData.append("file", file);
@@ -71,7 +109,6 @@ const Upload = () => {
     return data.secure_url;
   }
 
-  // Function to send email
   async function sendEmail({
     pdfUrl,
     name,
@@ -225,6 +262,9 @@ const Upload = () => {
 
             <FaCheckCircle color="green" size={30} />
           </span>
+        )}
+        {uploadData && uploadData.error && (
+          <p className="text-black-500">{uploadData.error}</p>
         )}
 
         {uploadData && (
