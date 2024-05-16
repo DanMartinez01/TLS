@@ -241,7 +241,6 @@ const Upload = () => {
             </span>
           )}
         </div>
-
         {pdfSrc && !uploadData && !isSent && (
           <button
             type="submit"
@@ -250,10 +249,9 @@ const Upload = () => {
             Upload PDF
           </button>
         )}
-
         {isSent && (
           <span className="mt-4 flex flex-col items-center justify-center">
-            <span className="flex flex-col">
+            <span className="flex flex-col mb-2">
               <p className="text-2xl text-black-500 font-semibold mx-1">
                 Your message was sent successfully!
               </p>
@@ -261,7 +259,6 @@ const Upload = () => {
                 Consulta enviada con éxito!
               </p>
             </span>
-
             <FaCheckCircle color="green" size={30} />
           </span>
         )}
