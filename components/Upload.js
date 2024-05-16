@@ -69,7 +69,9 @@ const Upload = () => {
       // Check file size
       const maxFileSize = 10 * 1024 * 1024; // 10 MB in bytes
       if (file.size > maxFileSize) {
-        throw new Error("File size exceeds the limit (10MB).");
+        throw new Error(
+          "File size exceeds the limit: 10MB /El archivo es mayor a 10MB. Contact us at: info@translingualsolutions.com"
+        );
       }
 
       const pdfUrl = await uploadPDF(file);
@@ -144,7 +146,7 @@ const Upload = () => {
         method="post"
         onChange={handleOnChange}
         onSubmit={handleOnSubmit}
-        className="w-full px-4 mb-24 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
+        className="w-full mb-24 lg:w-2/4 md:w-2/4 rounded-md lg:shadow-xl xl:shadow-2xl shadow-slate-700 text-center"
       >
         <div className="my-4 text-black-500 text-sm flex flex-col items-start">
           <input
@@ -243,7 +245,7 @@ const Upload = () => {
         {pdfSrc && !uploadData && !isSent && (
           <button
             type="submit"
-            className="w-2/4 bg-green hover:bg-yellow-200 text-white-300 py-2 px-8 rounded-lg cursor-pointer inline-block mt-10"
+            className="w-2/4 bg-green hover:bg-yellow-200 text-white-300 py-2 px-8 rounded-lg cursor-pointer inline-block my-10"
           >
             Upload PDF
           </button>
