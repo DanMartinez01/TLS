@@ -49,23 +49,18 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-3">
-          <div className="flex flex-row items-center">
+          <button className="flex items-end justify-center  rounded-lg shadow-lg shadow-gray-400 pt-1">
             <a href="/">
               <Image
-                src="/assets/logo2.png"
-                width={110}
-                height={35}
+                src="/assets/logo3.png"
+                width={56}
+                height={24}
                 responsive
+                quality={100}
+                className="mt-auto"
               />
             </a>
-
-            {/* <a
-              href="/"
-              className="text-green text-bold textxl md:text-2xl lg:text-2xl xl:text-2xl"
-            >
-              Translingual solutions
-            </a> */}
-          </div>
+          </button>
           <ul className="hidden lg:flex col-start-4 col-end-8 text-black-500  items-center">
             {t("header", { returnObjects: true }).map((item, index) => (
               <LinkScroll

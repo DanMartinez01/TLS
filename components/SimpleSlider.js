@@ -49,15 +49,15 @@ const SimpleSlider = () => {
   return (
     <div className="w-full overflow-hidden mt-20  md:mt-10 bg-grayBg ">
       <Slider {...settings}>
-        {/* <div className="w-full">
+        <div className="w-full">
           <Image
-            src={"/assets/carousel2.png"}
-            width={1400}
-            height={500}
+            src={"/assets/carousel5.png"}
+            width={2000}
+            height={700}
             layout="responsive"
             quality={100}
           />
-        </div> */}
+        </div>
         <div className="w-full">
           <Image
             src={"/assets/carousel4.png"}

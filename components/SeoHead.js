@@ -14,7 +14,6 @@ const defaultMeta = {
   // change with url of your image (recommended dimension = 1.91:1)
   // used in twitter, facebook, etc. card when link copied in tweet/status
   image: "/favicon.png",
-  author: "Daniela Martinez",
 };
 
 /**
@@ -74,7 +73,7 @@ const SeoHead = (props) => {
             property="og:publish_date"
             content={meta.date}
           />
-          <meta name="author" property="article:author" content={meta.author} />
+          {/* <meta name="author" property="article:author" content={meta.author} /> */}
         </>
       )}
       {/* Favicons */}
