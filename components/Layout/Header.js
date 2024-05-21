@@ -49,7 +49,7 @@ const Header = () => {
         }
       >
         <nav className="max-w-screen-xl px-6 sm:px-8 lg:px-12 mx-auto grid grid-flow-col py-3 sm:py-3">
-          <button className="flex items-end justify-center  rounded-lg shadow-lg shadow-gray-400 pt-1">
+          <button className="flex items-end justify-center  rounded-lg shadow-lg shadow-gray-400 pt-1 my-auto">
             <a href="/">
               <Image
                 src="/assets/logo3.png"
