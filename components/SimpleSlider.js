@@ -47,7 +47,7 @@ const SimpleSlider = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden mt-20  md:mt-10 bg-grayBg ">
+    <div className="w-full overflow-hidden mt-16  md:mt-10 bg-grayBg ">
       <Slider {...settings}>
         <div className="w-full">
           <Image
