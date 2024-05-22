@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from "../../public/assets/logo2.png";
+import AboutMe from "./AboutMe";
 import { FaFacebook, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { MdLocationPin, MdContactMail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
@@ -72,17 +73,8 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="w-full flex flex-row items-center bg-green   px-6 sm:px-8 lg:px-8 xl:px-12 pt-4 pb-4 mb-16 md:mb-16 lg:mb-0 xl:mb-0">
-        <div className="rounded-full bg-grayTheme p-6 py-auto mr-2"></div>
-        <p className="mr-4 text-white-500 transition-all text-xs md:text-sm lg:text-sm xl:text-sm">
-          {t("certificate")}
-        </p>
-        <Image
-          src={t("icon")}
-          width={48}
-          height={48}
-          className="ml-2 w-72 h- md:w-36 md:h-36 lg:w-48 lg:h-48"
-        />
+      <div className="bg-white-500">
+        <AboutMe />
       </div>
     </div>
   );
