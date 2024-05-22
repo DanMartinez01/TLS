@@ -27,12 +27,8 @@
   "services": "Services",
   "testimonies":"Testimonies",
 "aboutTitle":"About Us",
-  "aboutUs": 
-  [{"one":"In a world where effective communication knows no borders,"},
-  {"two":" Translingual Solutions,"},
-  {"three":"stands as a beacon of expertise and innovation.With over 20 years of experience in the translation industry, our founder, Estefanía Carbone, has honed her skills as a leader of multinational teams, ensuring flawless execution and integration of language programs that consistently exceed client expectations in both quality and timeliness.Now, we channel that wealth of knowledge into"},
-  {"five":"Translingual Solutions."},
- {"six":" a company dedicated to providing the premier language services you need to thrive in a global marketplace.  Our team of seasoned professionals offers the ideal blend of linguistic prowess and industry insight to deliver solutions that empower your business to break down language barriers and foster international success. Whether you need translation, localization, editing, or proofreading services, trust Translingual Solutions to guide you. Our unwavering commitment to quality, customer satisfaction, and cultural nuance sets us apart. Experience the Translingual Solutions difference and unlock your organization's full potential in a multilingual world."}
+"aboutUs": [
+  {"one": "In a world where effective communication knows no borders,<strong>Translingual Solutions</strong> stands as a beacon of expertise and innovation.With over 20 years of experience in the translation industry, our founder, Estefanía Carbone, has honed her skills as a leader of multinational teams, ensuring flawless execution and integration of language programs that consistently exceed client expectations in both quality and timeliness. Now, we channel that wealth of knowledge into <strong>Translingual Solutions</strong> a company dedicated to providing the premier language services you need to thrive in a global marketplace.  Our team of seasoned professionals offers the ideal blend of linguistic prowess and industry insight to deliver solutions that empower your business to break down language barriers and foster international success. Whether you need translation, localization, editing, or proofreading services, trust <strong>Translingual Solutions</strong> to guide you. Our unwavering commitment to quality, customer satisfaction, and cultural nuance sets us apart. Experience the <strong>Translingual Solutions</strong> difference and unlock your organization's full potential in a multilingual world."}
 ],
   
   
@@ -104,7 +100,7 @@
     "email":"Info@translingualsolutions.com",
     "footerPrivacy":"Privacy Policy",
 
-  "certificate":"Antonina Estefanía Carbone | SWORN TRANSLATOR | Member 6163 | Volume XVII - Page 14"
+  "certificate":"SWORN TRANSLATOR | Member 6163 | Volume XVII - Page 14"
 ,
 "icon":"/assets/ctpba.png",
 
