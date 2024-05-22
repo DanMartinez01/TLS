@@ -6,7 +6,7 @@ const AboutMe = () => {
   const { t } = useTranslation();
   return (
     <>
-      <section class="mb-12 md:mb-12 lg:mb-0 xl:mb-0 py-6 px-4 md:px-8">
+      <section class="mb-4 md:mb-4 lg:mb-0 xl:mb-0 py-6 px-4 md:px-8">
         <div class="w-full flex flex-row justify-start items-center text-center">
           <div className="">
             <Image
