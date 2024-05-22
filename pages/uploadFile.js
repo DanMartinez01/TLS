@@ -7,7 +7,7 @@ import LanguageSelector from "../components/LanguageSelector";
 
 const uploadFile = () => {
   return (
-    <>
+    <div className="-mb-12">
       <div className="w-full h-24 flex justify-end items-center px-4 py-8 mb-8">
         <a href="/" className="hover:text-green">
           <span className="w-full flex flex-row items-center text-xl my-auto ">
@@ -22,7 +22,7 @@ const uploadFile = () => {
         <Upload />
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
