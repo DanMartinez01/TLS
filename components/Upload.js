@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import CountryCodeSelect from "./CountryCodeSelect";
 
 const Upload = () => {
   const { t } = useTranslation();
@@ -10,6 +11,7 @@ const Upload = () => {
   const [fileName, setFileName] = useState("");
   const [isSent, setIsSent] = useState(false);
   const [areaCode, setAreaCode] = useState("");
+  const [countryCode, setCountryCode] = useState(""); // Add state for country code
 
   function handleOnChange(changeEvent) {
     const file = changeEvent.target.files[0];
@@ -48,7 +50,7 @@ const Upload = () => {
     const formData = new FormData(form);
     const name = formData.get("name");
     const email = formData.get("email");
-    const phone = `${areaCode}-${formData.get("phone")}`; // Combine area code with phone number
+    const phone = `${countryCode}-${areaCode}-${formData.get("phone")}`; // Combine area code with phone number
     const moreDetails = formData.get("more_details");
     const language = formData.get("language");
 
@@ -79,6 +81,7 @@ const Upload = () => {
       setUploadData(null);
       setFileName("");
       setAreaCode(""); // Reset area code state
+      setCountryCode("");
     } catch (error) {
       // Handle error
       console.error("Error submitting form:", error);
@@ -174,6 +177,10 @@ const Upload = () => {
             Phone<span className="text-red-500"></span>/Telefono*
           </label>
           <div className="flex mb-2">
+            <CountryCodeSelect
+              countryCode={countryCode}
+              setCountryCode={setCountryCode}
+            />
             <input
               type="tel"
               name="areaCode"
