@@ -42,12 +42,17 @@ const Feature = () => {
         <div className="flex flex-col w-full">
           {t("aboutUs", { returnObjects: true }).map((item, index) => (
             <div className="text-left">
-              <p className="text-white-500 text-sm">{item.one}</p>
+              {/* <p className="text-white-500 text-sm">{item.one}</p>
               <p className="text-white-500 font-bold text-lg">{item.two}</p>
               <p className="text-white-500 text-sm">{item.three}</p>
               <p className="text-white-500 text-sm">{item.four}</p>
               <p className="text-white-500 font-bold text-sm">{item.five}</p>
-              <p className="text-white-500 text-sm">{item.six}</p>
+              <p className="text-white-500 text-sm">{item.six}</p> */}
+              <p
+                className="text-white-500 text-sm"
+                key={index}
+                dangerouslySetInnerHTML={{ __html: Object.values(item)[0] }}
+              ></p>
             </div>
           ))}
 
