@@ -17,11 +17,11 @@ const SimpleSlider = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 500,
+    speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 2500, // Set autoplay speed (in milliseconds)
+    autoplaySpeed: 2000, // Set autoplay speed (in milliseconds)
   };
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const animationVariants = {
@@ -49,6 +49,15 @@ const SimpleSlider = () => {
   return (
     <div className="w-full overflow-hidden mt-20  md:mt-10 bg-grayBg ">
       <Slider {...settings}>
+        <div className="w-full">
+          <Image
+            src={"/assets/carousel6.png"}
+            width={2000}
+            height={700}
+            layout="responsive"
+            quality={100}
+          />
+        </div>
         <div className="w-full">
           <Image
             src={"/assets/carousel5.png"}
