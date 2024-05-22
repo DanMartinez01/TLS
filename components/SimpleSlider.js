@@ -17,11 +17,11 @@ const SimpleSlider = () => {
     dots: false,
     arrows: false,
     infinite: true,
-    speed: 700,
+    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 2000, // Set autoplay speed (in milliseconds)
+    autoplaySpeed: 2500, // Set autoplay speed (in milliseconds)
   };
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
   const animationVariants = {
