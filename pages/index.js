@@ -8,7 +8,7 @@ import SimpleSlider from "../components/SimpleSlider";
 export default function Home() {
   return (
     <>
-      <SeoHead title="Trans Lingual Solutions" />
+      <SeoHead title="TransLingual Solutions" />
       <Layout>
         <SimpleSlider />
         <Pricing />
